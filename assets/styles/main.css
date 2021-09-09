@@ -58,12 +58,11 @@ img {
 .mainheader-height .header-navbar-menu {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 79px;
 }
 .mainheader-height .header-navbar-menu .main-nav {
   text-align: center;
-  padding: 0 40px;
 }
 .mainheader-height .header-navbar-menu .main-nav ul {
   list-style: none;
@@ -96,6 +95,12 @@ img {
 }
 .mainheader-height .header-navbar-menu .main-nav ul .item-link-lang div span {
   color: #9fc0c4;
+}
+.mainheader-height .header-navbar-menu .main-nav.nav-left {
+  text-align: left;
+}
+.mainheader-height .header-navbar-menu .main-nav.nav-right {
+  text-align: right;
 }
 .mainheader-height .header-navbar-menu .main-nav-center {
   min-width: 120px;
@@ -1195,6 +1200,20 @@ img {
   font-size: 13px;
 }
 
+@media (min-width: 1024px) {
+  .main-nav.nav-left {
+    flex: 0 0 40%;
+  }
+
+  .main-nav.nav-right {
+    flex: 0 0 40%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .mainheader-height .header-navbar-menu .main-nav ul li a {
+    padding: 0 5px;
+  }
+}
 @media (max-width: 767px) {
   .section-utili .wrapper-section-utili .ultili_title h4,
 .section-location .wrapper-section-location .grid_lct__content .lct_item-content .lct_item_title h4,
