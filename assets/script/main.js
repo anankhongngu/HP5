@@ -9,6 +9,12 @@ $(document).ready(function() {
         autoplayTimeout: 10000,
         responsive: {
             0: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            600: {
                 items: 2
             },
             768: {
