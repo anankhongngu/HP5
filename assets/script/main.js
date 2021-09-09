@@ -143,4 +143,13 @@ $(document).ready(function() {
             alert('Thông báo thành công');
         })
     });
+    /* scroll top */
+    
 })
+//Click event to scroll to top
+jQuery(document).on("click", ".back-to-top", function(){
+    jQuery('html, body').animate({
+        scrollTop: 0			
+    }, 800);
+});
+
