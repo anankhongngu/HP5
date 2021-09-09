@@ -150,6 +150,6 @@ $(document).ready(function() {
 jQuery(document).on("click", ".back-to-top", function(){
     jQuery('html, body').animate({
         scrollTop: 0			
-    }, 800);
+    }, 300);
 });
 

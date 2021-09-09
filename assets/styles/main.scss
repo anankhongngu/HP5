@@ -88,26 +88,38 @@ background: #004951;
                     cursor: pointer;
                 }
             }
-            .item-link-lang {
-                div {
-                    position: absolute;
-                    display: flex;
-                    top: -17px;
-                    a {
-                        display: inline-block;
-                    }
-                    span {
-                        color: #9fc0c4;
-                    }
-                }
+            
+        }
+    }
+    .item-link-lang {
+        text-align: right;
+        float: right;
+        div {
+            position: absolute;
+            display: flex;
+            top: 0;
+            a {
+                color: #9fc0c4;
+                text-decoration: none;
+                display: block;
+                font-size: 14px;
+                text-transform: uppercase;
+                position: relative;
+                padding: 0 17px;
+                cursor: pointer;
+            }
+            span {
+                color: #9fc0c4;
             }
         }
     }
     .main-nav.nav-left {
         text-align: left;
+        position: relative;
     }
-    .main-nav.nav-right {
+    nav.main-nav.nav-right {
         text-align: right;
+        position: relative;
     }
     .main-nav-center {
         min-width: 120px;

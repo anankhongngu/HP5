@@ -85,22 +85,35 @@ img {
   padding: 0 17px;
   cursor: pointer;
 }
-.mainheader-height .header-navbar-menu .main-nav ul .item-link-lang div {
+.mainheader-height .header-navbar-menu .item-link-lang {
+  text-align: right;
+  float: right;
+}
+.mainheader-height .header-navbar-menu .item-link-lang div {
   position: absolute;
   display: flex;
-  top: -17px;
+  top: 0;
 }
-.mainheader-height .header-navbar-menu .main-nav ul .item-link-lang div a {
-  display: inline-block;
+.mainheader-height .header-navbar-menu .item-link-lang div a {
+  color: #9fc0c4;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 17px;
+  cursor: pointer;
 }
-.mainheader-height .header-navbar-menu .main-nav ul .item-link-lang div span {
+.mainheader-height .header-navbar-menu .item-link-lang div span {
   color: #9fc0c4;
 }
 .mainheader-height .header-navbar-menu .main-nav.nav-left {
   text-align: left;
+  position: relative;
 }
-.mainheader-height .header-navbar-menu .main-nav.nav-right {
+.mainheader-height .header-navbar-menu nav.main-nav.nav-right {
   text-align: right;
+  position: relative;
 }
 .mainheader-height .header-navbar-menu .main-nav-center {
   min-width: 120px;
