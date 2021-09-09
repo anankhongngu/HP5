@@ -125,5 +125,16 @@ $(document).ready(function() {
 		$(".sub-head").toggleClass("active");
         $("#menu-open-mob").toggleClass("active");
 	})
-
+    /* */
+    $('#formbaogia').submit(function(e){
+        e.preventDefault();
+        //var self = $(this);
+        $.ajax({
+            type: "POST",
+                url: 'https://script.google.com/macros/s/AKfycbzytlR5WP4jSZpRAVy4kw817QftJhRZ_sX_UU9Rx9AIpu7i1T_L/exec',
+                data: $('#formbaogia').serialize(),
+            }).always(function(data) {
+            alert('Thông báo thành công');
+        })
+    });
 })
