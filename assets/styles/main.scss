@@ -219,6 +219,9 @@ position: relative;
             content: "";
             border: 1px solid #d0af9f;
             left: 50%;
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
     }
     .sth_item-content {
@@ -957,7 +960,7 @@ background: #f9f9f9;
         right: 0;
         bottom: 0;
         z-index: 999;
-        background: rgb(150 150 150 / 17%);
+        background: rgb(86 86 86 / 48%);
         -webkit-transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
         transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
         -webkit-transform-origin: 0 0;
@@ -1039,9 +1042,16 @@ background: #f9f9f9;
         }
     }
 }
-.section-ecological .la-ne {
-    @media (max-width: 1023px) {
-        max-width: 220px;
+.section-ecological {
+    .sth_title a img {
+        @media (max-width: 1023px) {
+            max-width: 310px;
+        }
+    }
+    .la-ne {
+        @media (max-width: 1023px) {
+            max-width: 220px;
+        }
     }
 }
 .section-location .lane {

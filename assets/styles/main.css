@@ -206,6 +206,11 @@ img {
   border: 1px solid #d0af9f;
   left: 50%;
 }
+@media (max-width: 767px) {
+  .section-ecological .grid_sth__content .sth_item-content::before {
+    display: none;
+  }
+}
 .section-ecological .grid_sth__content .sth_item-content {
   display: flex;
   justify-content: space-between;
@@ -894,7 +899,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: 999;
-    background: rgba(150, 150, 150, 0.17);
+    background: rgba(86, 86, 86, 0.48);
     transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
     transform-origin: 0 0;
     transform: scaleY(0);
@@ -974,6 +979,11 @@ img {
   }
 }
 
+@media (max-width: 1023px) {
+  .section-ecological .sth_title a img {
+    max-width: 310px;
+  }
+}
 @media (max-width: 1023px) {
   .section-ecological .la-ne {
     max-width: 220px;
