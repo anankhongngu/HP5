@@ -83,6 +83,32 @@ $(function(){
             imgvideo: './assets/images/banner/thiet-ke.png',
             title: 'Trọn vẹn từng khoảng khắc'
         }],
+        timeline1: [{
+            time: '0 - 5 phút',
+            content1: 'Đại lộ Nguyễn Văn Linh',
+            content2: 'BV Pháp Việt',
+            content3: 'BV Tâm Đức',
+            content4: 'UBND Quận 7',
+            content5: 'TTTM Crescent mall',
+            content6: 'Tuyến Metro số 4',
+            content7: 'Trung tâm SECC',
+            content8: 'Bưu điện Quận 7'
+        }],
+        timeline2: [{
+            time: '5 - 10 phút',
+            content1: 'ĐH RMIT',
+            content2: 'ĐH Tôn Đức Thắng',
+            content3: 'Cầu Phú Mỹ',
+            content4: 'TTTM Lotte Mart',
+            content5: 'TTTM SC VIVO'
+        }],
+        timeline3: [{
+            time: '10 - 20 phút',
+            content1: 'Chợ Bến Thành',
+            content2: 'TTTM Bitexco',
+            content3: 'Cao tốc Long Thành – Dầu Giây',
+            content4: 'Cao tốc Bến Lức - Long Thành'
+        }],
         renderMenuLeftVi: function() {
             const htmlmenu = this.menuvileft.map(menuitem => {
                 return `<li><a href="${menuitem.link}">${menuitem.menu}</a></li>`
@@ -174,6 +200,55 @@ $(function(){
                         </a>
                         <h4>${itemvid.title}</h4>`
             })
+            //timeline
+            const htmltimeline1 = this.timeline1.map(item => {
+                return `<div class="timestamp">
+                            <span class="date">${item.time}<span>
+                        </div>
+                        <div class="status">
+                            <ul>
+                                <li>${item.content1}</li>
+                                <li>${item.content2}</li>
+                                <li>${item.content3}</li>
+                                <li>${item.content4}</li>
+                                <li>${item.content5}</li>
+                                <li>${item.content6}</li>
+                                <li>${item.content7}</li>
+                                <li>${item.content8}</li>
+                            </ul>
+                        </div>`
+            });
+            //timeline 2
+            const htmltimeline2 = this.timeline2.map(item => {
+                return `<div class="timestamp">
+                            <span class="date">${item.time}<span>
+                        </div>
+                        <div class="status">
+                            <ul>
+                                <li>${item.content1}</li>
+                                <li>${item.content2}</li>
+                                <li>${item.content3}</li>
+                                <li>${item.content4}</li>
+                                <li>${item.content5}</li>
+                            </ul>
+                        </div>`
+            });
+            //timeline
+            const htmltimeline3 = this.timeline3.map(item => {
+                return `<div class="timestamp">
+                            <span class="date">${item.time}<span>
+                        </div>
+                        <div class="status">
+                            <ul>
+                                <li>${item.content1}</li>
+                                <li>${item.content2}</li>
+                                <li>${item.content3}</li>
+                                <li>${item.content4}</li>
+                            </ul>
+                        </div>`
+            });
+
+
 
             //render
             $('.item-banner-content').html(htmlintro.join(''));
@@ -182,6 +257,9 @@ $(function(){
             $('.wrapper-section-location').html(htmllocationOne.join(''));
             $('.ultili_title').html(htmllocationTwo.join(''));
             $('.video_title').html(htmlvideo.join(''));
+            $('.slide-timeline-1').html(htmltimeline1.join(''));
+            $('.slide-timeline-2').html(htmltimeline2.join(''));
+            $('.slide-timeline-3').html(htmltimeline3.join(''));
         },
         start: function() {
             this.renderMenuLeftVi();
@@ -219,7 +297,7 @@ $(function(){
         }],
         introduce: [{
             title: 'Spatial Therapy "Anxiety Age"',
-            desc: 'Green Star Sky Garden is not just an apartment to live in, this is considered a unique masterpiece that is the source of the privilege of a life: Purifying the body - Protecting health - Bringing both physical and mental energy the spirit'
+            desc: 'The Peak Garden is not just an apartment to live in, this is considered as a unique masterpiece and the originate of privileged: Purifying Body - Protecting Health - Unleashing Physical and Mental Energy '
         }],
         ecological: [{
             titleimg: './assets/images/title-en/2.png'
@@ -227,29 +305,29 @@ $(function(){
         ecologicalcontent: [{
             image: './assets/images/banner/group1.jpg',
             link:'/',
-            title: 'Cư dân dự án được thoả sức hoà mình trong hệ thống mảng xanh nội khu theo phương đứng đẳng cấp, giúp điều hoà nhiệt độ toàn khu với Công viên Luna park hơn 6.000m2, hồ thiên đường lãng mạn hơn 3.000m2 và hệ thống vườn treo thác nước len lõi trong mỗi toà nhà.',
+            title: 'Inside each Wellness Apartment is equipped with an air purifier system, infrared heating lamp, antibacterial paint, etc. to help purify and perfectly protect the health of the owner.',
             number: './assets/images/banner/1.png'
         },{
             image: './assets/images/banner/group2.png',
             link:'/',
-            title: 'Mỗi căn hộ đều được tối ưu hoá mặt thoáng với nhiều cửa sổ mở rộng tầm view thoáng đãng giúp đón ánh sáng và không khí trong lành vào ngôi nhà của bạn.',
+            title: 'Each apartment has many windows to widen the view for catching shining and fresh air into the house.',
             number: './assets/images/banner/2.png'
         },{
             image: './assets/images/banner/group3.png',
             link:'/',
-            title: 'Cư dân dự án được thoả sức hoà mình trong hệ thống mảng xanh nội khu theo phương đứng đẳng cấp, giúp điều hoà nhiệt độ toàn khu với Công viên Luna park hơn 6.000m2, hồ thiên đường lãng mạn hơn 3.000m2 và hệ thống vườn treo thác nước len lõi trong mỗi toà nhà. ',
+            title: 'Residents can freely immerse themselves in the high-class vertical internal green system, helping to regulate the temperature of the whole area with Luna park over 6,000m2, romantic paradise lake over 3,000m2, and hanging waterfall garden system in each building.',
             number: './assets/images/banner/3.png'
         },{
             image: './assets/images/banner/group4.png',
             link:'/',
-            title: 'Với góc nhìn từ các căn hộ trên cao, cư dân được chiêm ngưỡng vẻ đẹp bình yên và thư thái của cỏ cây sông nước bao bọc xung quanh bởi KĐT Phú Mỹ Hưng được quy hoạch tiêu chuẩn và bài bản bậc nhất.',
+            title: 'With the view from the high floor apartments, residents can admire the peaceful sightseeings with trees and rivers surrounded by the most standard living urban - Phu My Hung area.',
             number: './assets/images/banner/4.png'
         }],
         locationOne: [{
             imglocation: './assets/images/title-en/3.png',
             //titletext: 'Kết nối thông suốt',
-            content1: 'Toạ lạc tại vị trí đắt giá trên 2 trục đường huyết mạch Nguyễn Lương Bằng nối dài. Đây là cung đường thương mại, tài chính “triệu đô” sầm uất bậc nhất NSG, liền kề Phú Mỹ Hưng.',
-            content2: 'Tại Green Star Sky Garden vừa đủ gần để 1 bước chân xuống phố, vừa đủ cách biệt để cư dân tận hưởng sự yên bình đặc quyền.',
+            content1: 'Located in an expensive location on two extended arterial Nguyen Luong Bang roads. This is the busiest "million-dollar" commercial and financial street in Nam Sai Gon, adjacent to Phu My Hung area.',
+            content2: "At The Peak Garden, it's close to being one step down the street and far enough away barely to enjoy the privileged peace.",
             map: './assets/images/banner/map.png'
          }],
          locationTwo: [{
@@ -259,6 +337,32 @@ $(function(){
         video: [{
             imgvideo: './assets/images/title-en/6.png',
             title: 'Trọn vẹn từng khoảng khắc'
+        }],
+        timeline1: [{
+            time: '0 - 5 Minute',
+            content1: 'Nguyen Van Linh Avenue',
+            content2: 'FV Hospital',
+            content3: 'Tam Duc Hospital',
+            content4: "People's Committee of District 7",   
+            content5: 'Crescent Mall Shopping Center',
+            content6: 'Metro 4',
+            content7: 'Saigon Exhibition and Convention Center / SECC',
+            content8: 'Post Office District 7'
+        }],
+        timeline2: [{
+            time: '5 - 10 Minute',
+            content1: 'RMIT University',
+            content2: 'Ton Duc Thang University',
+            content3: 'Phu My Bridge',
+            content4: 'Lotte Mart',
+            content5: 'SC VivoCity mall'
+        }],
+        timeline3: [{
+            time: '10 - 20 Minute',
+            content1: 'Ben Thanh Market',
+            content2: 'Bitexco Tower',
+            content3: 'Long Thanh – Dau Giay Expressway',
+            content4: 'Ben Luc - Long Thanh Expressway'
         }],
         renderMenuLeftEn: function() {
             const htmls = this.menuvileft.map(menuitem => {
@@ -352,13 +456,63 @@ $(function(){
                         </a>
                         <h4 class="hide">${itemvid.title}</h4>`
             })
-
+            //timeline
+            const htmltimeline1 = this.timeline1.map(item => {
+                return `<div class="timestamp">
+                            <span class="date">${item.time}<span>
+                        </div>
+                        <div class="status">
+                            <ul>
+                                <li>${item.content1}</li>
+                                <li>${item.content2}</li>
+                                <li>${item.content3}</li>
+                                <li>${item.content4}</li>
+                                <li>${item.content5}</li>
+                                <li>${item.content6}</li>
+                                <li>${item.content7}</li>
+                                <li>${item.content8}</li>
+                            </ul>
+                        </div>`
+            });
+            //timeline 2
+            const htmltimeline2 = this.timeline2.map(item => {
+                return `<div class="timestamp">
+                            <span class="date">${item.time}<span>
+                        </div>
+                        <div class="status">
+                            <ul>
+                                <li>${item.content1}</li>
+                                <li>${item.content2}</li>
+                                <li>${item.content3}</li>
+                                <li>${item.content4}</li>
+                                <li>${item.content5}</li>
+                            </ul>
+                        </div>`
+            });
+            //timeline
+            const htmltimeline3 = this.timeline3.map(item => {
+                return `<div class="timestamp">
+                            <span class="date">${item.time}<span>
+                        </div>
+                        <div class="status">
+                            <ul>
+                                <li>${item.content1}</li>
+                                <li>${item.content2}</li>
+                                <li>${item.content3}</li>
+                                <li>${item.content4}</li>
+                            </ul>
+                        </div>`
+            });
+            
             $('.item-banner-content').html(htmlintro.join(''));
             $('.sth_title').html(htmlsttt.join(''));
             $('.sth_item-content').html(htmlstcontent.join(''));
             $('.wrapper-section-location').html(htmllocationOne.join(''));
             $('.ultili_title').html(htmllocationTwo.join(''));
             $('.video_title').html(htmlvideo.join(''));
+            $('.slide-timeline-1').html(htmltimeline1.join(''));
+            $('.slide-timeline-2').html(htmltimeline2.join(''));
+            $('.slide-timeline-3').html(htmltimeline3.join(''));
         },
         start: function() {
             this.renderMenuLeftEn();
