@@ -74,7 +74,15 @@ $(function(){
             content1: 'Toạ lạc tại vị trí đắt giá trên 2 trục đường huyết mạch Nguyễn Lương Bằng nối dài. Đây là cung đường thương mại, tài chính “triệu đô” sầm uất bậc nhất NSG, liền kề Phú Mỹ Hưng.',
             content2: 'Tại Green Star Sky Garden vừa đủ gần để 1 bước chân xuống phố, vừa đủ cách biệt để cư dân tận hưởng sự yên bình đặc quyền.',
             map: './assets/images/banner/map.png'
-         }],
+        }],
+        locationTwo: [{
+            imglocation2: './assets/images/banner/tien-ich.png',
+            title: 'Đặc quyền giá trị'
+        }],
+        video: [{
+            imgvideo: './assets/images/banner/thiet-ke.png',
+            title: 'Trọn vẹn từng khoảng khắc'
+        }],
         renderMenuLeftVi: function() {
             const htmlmenu = this.menuvileft.map(menuitem => {
                 return `<li><a href="${menuitem.link}">${menuitem.menu}</a></li>`
@@ -152,13 +160,28 @@ $(function(){
                             </div>
                         </div>`
             })
+            //locationTwo
+            const htmllocationTwo = this.locationTwo.map(location2 => {
+                return `<a>
+                            <img class="lazyload" width="534" height="120" data-src="${location2.imglocation2}" alt="icon title" />
+                        </a>
+                        <h4>${location2.title}</h4>`
+            })
+            //video
+            const htmlvideo = this.video.map(itemvid => {
+                return `<a>
+                            <img class="lazyload" width="501" height="120" data-src="${itemvid.imgvideo}" alt="icon title" />
+                        </a>
+                        <h4>${itemvid.title}</h4>`
+            })
 
             //render
             $('.item-banner-content').html(htmlintro.join(''));
             $('.sth_title').html(htmlsttt.join(''));
             $('.sth_item-content').html(htmlstcontent.join(''));
             $('.wrapper-section-location').html(htmllocationOne.join(''));
-            
+            $('.ultili_title').html(htmllocationTwo.join(''));
+            $('.video_title').html(htmlvideo.join(''));
         },
         start: function() {
             this.renderMenuLeftVi();
@@ -223,12 +246,20 @@ $(function(){
             number: './assets/images/banner/4.png'
         }],
         locationOne: [{
-            imglocation: './assets/images/banner/vi-tri.png',
-            titletext: 'Kết nối thông suốt',
+            imglocation: './assets/images/title-en/3.png',
+            //titletext: 'Kết nối thông suốt',
             content1: 'Toạ lạc tại vị trí đắt giá trên 2 trục đường huyết mạch Nguyễn Lương Bằng nối dài. Đây là cung đường thương mại, tài chính “triệu đô” sầm uất bậc nhất NSG, liền kề Phú Mỹ Hưng.',
             content2: 'Tại Green Star Sky Garden vừa đủ gần để 1 bước chân xuống phố, vừa đủ cách biệt để cư dân tận hưởng sự yên bình đặc quyền.',
             map: './assets/images/banner/map.png'
          }],
+         locationTwo: [{
+            imglocation2: './assets/images/title-en/4.png',
+            title: 'Đặc quyền giá trị'
+        }],
+        video: [{
+            imgvideo: './assets/images/title-en/6.png',
+            title: 'Trọn vẹn từng khoảng khắc'
+        }],
         renderMenuLeftEn: function() {
             const htmls = this.menuvileft.map(menuitem => {
                 return `<li><a href="${menuitem.link}">${menuitem.menu}</a></li>`
@@ -274,7 +305,7 @@ $(function(){
                         </div>`
             })
             //locationOne: locationOne
-            const htmllocationOne = this.locationOne.map(location => {
+                const htmllocationOne = this.locationOne.map(location => {
                 return `<div class="col-md-4 col-sm-12 col-xs-12">
                             <div class="grid_lct__content">
                                 <div class="lct_title">
@@ -283,7 +314,7 @@ $(function(){
                                     </a>
                                 </div>
                                 <div class="lct_item-content">
-                                    <div class="lct_item_title">
+                                    <div class="hide lct_item_title">
                                         <h4>${location.titletext}</h4>
                                     </div>
                                     <div class="lct_item_text">
@@ -307,11 +338,27 @@ $(function(){
             })
 
             //
+            //locationTwo
+            const htmllocationTwo = this.locationTwo.map(location2 => {
+                return `<a>
+                            <img class="lazyload" width="534" height="120" data-src="${location2.imglocation2}" alt="icon title" />
+                        </a>
+                        <h4 class="hide">${location2.title}</h4>`
+            })
+            //video
+            const htmlvideo = this.video.map(itemvid => {
+                return `<a>
+                            <img class="lazyload" width="501" height="120" data-src="${itemvid.imgvideo}" alt="icon title" />
+                        </a>
+                        <h4 class="hide">${itemvid.title}</h4>`
+            })
 
             $('.item-banner-content').html(htmlintro.join(''));
             $('.sth_title').html(htmlsttt.join(''));
             $('.sth_item-content').html(htmlstcontent.join(''));
             $('.wrapper-section-location').html(htmllocationOne.join(''));
+            $('.ultili_title').html(htmllocationTwo.join(''));
+            $('.video_title').html(htmlvideo.join(''));
         },
         start: function() {
             this.renderMenuLeftEn();
