@@ -82,7 +82,7 @@ $(function(){
         video: [{
             imgvideo: './assets/images/banner/thiet-ke.png',
             title: 'Trọn vẹn từng khoảng khắc',
-            subtitle:'The design lines are intended to bring not only visual satisfaction but where all senses are fully awakened, creating a wonderful rhythm for your family.'
+            subtitle:'Những đường nét thiết kế nhằm mang đến một sự thỏa mãn không chỉ về thị giác mà ở đó mọi giác quan đều được đánh thức ở mức tối đa, tạo nên một bản nhạc tuyệt vời cho gia đình bạn.'
         }],
         timeline1: [{
             time: '0 - 5 phút',
