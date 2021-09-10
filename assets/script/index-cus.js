@@ -579,7 +579,7 @@ $(function(){
         video: [{
             imgvideo: './assets/images/title-en/6.png',
             title: 'Living in the moment',
-            subtitle:'Những đường nét thiết kế nhằm mang đến một sự thỏa mãn không chỉ về thị giác mà ở đó mọi giác quan đều được đánh thức ở mức tối đa, tạo nên một bản nhạc tuyệt vời cho gia đình bạn.'
+            subtitle:'The design lines are intended to bring not only visual satisfaction but where all senses are fully awakened, creating a wonderful rhythm for your family.'
         }],
         timeline1: [{
             time: '0 - 5 Minute',
