@@ -759,8 +759,11 @@ background: #f9fff7;
                 }
             }
         }
-        .htp-tablink-inv.ic-1 .icon-pos {
+        .htp-tablink-inv.ic-0 .icon-pos {
             margin-top: -15%;
+        }
+        .htp-tablink-inv.ic-1 .icon-pos {
+            margin-top: 0%;
         }
         .htp-tablink-inv.ic-2 .icon-pos {
             margin-top: -5%;
@@ -791,15 +794,15 @@ background: #f9fff7;
             }
         }
         .htp-tablink-inv.ic-3 .icon-pos {
-            margin-top: -5%;
+            margin-top: 0%;
         }
         .htp-tablink-inv.ic-4 .icon-pos {
-            margin-top: -30%;
+            margin-top: -45%;
         }
         .title-iven {
             color: #b28b68;
             text-transform: uppercase;
-            font-size: 15px;
+            font-size: 14px;
             display: block;
             width: 70%;
             text-align: center;
@@ -1044,7 +1047,7 @@ background: #f9f9f9;
             align-items: center;
             .menu-lang {
                 margin-right: 20px;
-                #lang-mob {
+                .lang-mobile {
                     color: #9fc0c4;
                     font-size: 24px;
                     text-transform: uppercase;
@@ -1321,12 +1324,12 @@ background: #f9f9f9;
         margin-top: 0 !important;
     }
     .section-investment .investment-table .htp-tablinks-investment .htp-tablink-inv .icon-iven img {
-        max-width: 80px;
-        max-height: 80px;
+        max-width: 65px;
+        max-height: 65;
     }
     .section-investment .investment-table .htp-tablinks-investment .htp-tablink-inv.active .icon-pos img {
-        max-width: 100px !important;
-        max-height: 100px !important;
+        max-width: 80px !important;
+        max-height: 80px !important;
     }
 }
 @media (max-width: 480px) {

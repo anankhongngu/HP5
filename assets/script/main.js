@@ -1,30 +1,54 @@
 $(document).ready(function() {
-    $('#slider-slick-home').owlCarousel({
-        items: 5,
-        loop: true,
-        margin: 0,
-        nav: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            480: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            1024: {
-                items: 5
+    setTimeout(function() {
+        $('#slider-slick-home').owlCarousel({
+            items: 5,
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                1024: {
+                    items: 5
+                }
             }
-        }
-    });
+        });
+
+        $('.htp-tabcontent-inv .owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1024: {
+                    items: 1
+                }
+            }
+        });
+        
+    },500)
 
     $('.htp-tabcontent .owl-carousel ').owlCarousel({
         items: 1,
@@ -47,26 +71,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.htp-tabcontent-inv .owl-carousel').owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 0,
-        nav: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            1024: {
-                items: 1
-            }
-        }
-    });
+    
     $('#owl-news').owlCarousel({
         items: 3,
         loop: true,
@@ -117,15 +122,16 @@ $(document).ready(function() {
             $(content + '[data-id=' + id + ']').addClass('active');
         });
     }
+    setTimeout(function() {
+        if ($('.htp-tablink').length) {
+            tab_custom('.htp-tablink', '.htp-tabcontent');
+        }
+        /*88 */
 
-    if ($('.htp-tablink').length) {
-        tab_custom('.htp-tablink', '.htp-tabcontent');
-    }
-    /*88 */
-
-    if ($('.htp-tablink-inv').length) {
-        tab_custom('.htp-tablink-inv', '.htp-tabcontent-inv');
-    }
+        if ($('.htp-tablink-inv').length) {
+            tab_custom('.htp-tablink-inv', '.htp-tabcontent-inv');
+        }
+    })
 
     $("#menu-open-mob").click(function(){
 		$(".sub-head").toggleClass("active");

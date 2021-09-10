@@ -81,7 +81,8 @@ $(function(){
         }],
         video: [{
             imgvideo: './assets/images/banner/thiet-ke.png',
-            title: 'Trọn vẹn từng khoảng khắc'
+            title: 'Trọn vẹn từng khoảng khắc',
+            subtitle:'The design lines are intended to bring not only visual satisfaction but where all senses are fully awakened, creating a wonderful rhythm for your family.'
         }],
         timeline1: [{
             time: '0 - 5 phút',
@@ -108,6 +109,81 @@ $(function(){
             content2: 'TTTM Bitexco',
             content3: 'Cao tốc Long Thành – Dầu Giây',
             content4: 'Cao tốc Bến Lức - Long Thành'
+        }],
+        tienich: [{
+            image: './assets/images/utilities/banner-1.png',
+            title: 'Hồ bơi sky view'
+        },{
+            image: './assets/images/utilities/banner-2.png',
+            title: 'Công viên Luna Park hơn 6000 m2'
+        },{
+            image: './assets/images/utilities/banner-3.png',
+            title: 'Hồ thiên đường hơn 3000 m2 '
+        },{
+            image: './assets/images/utilities/banner-4.png',
+            title: 'Tổ hợp vườn treo thác nước trong nhà'
+        },{
+            image: './assets/images/utilities/banner-5.png',
+            title: 'Hồ tắm khoáng nóng onsen'
+        }],
+        titlempp: [{
+            title:'Mặt bằng'
+        }],
+        titletab: [{
+            tab0:'Mặt bằng tổng thể ',
+            tab1: 'Tầng 1',
+            tab2: 'Tầng 2',
+            tab3: 'Tầng 3',
+            tab4: 'Tầng 4',
+            tab5: 'Tầng 5',
+            tab6: 'Tầng điển hình',
+        }],
+        investment: [{
+            tab0: 'Vị thế vàng',
+            img0: './assets/images/investment/icon-1.png',
+            tab1: 'dịch vụ all-in-one',
+            img1: './assets/images/investment/icon-2.png',
+            tab2: 'Giá trị BĐS gia tăng theo thời gian',
+            img2: './assets/images/investment/icon-3.png',
+            tab3: 'Sức bật hạ tầng',
+            img3: './assets/images/investment/icon-4.png',
+            tab4: 'Cam kết vàng từ CĐT',
+            img4: './assets/images/investment/icon-4.png',
+        }],
+        investmentcontent0: [{
+            content: 'Dự án sở hữu vị trí vàng hiếm hoi còn lại toạ lạc tại cung đường Nguyễn Lương Bằng - Tuyến phố tài chính sầm uất của toàn khu Nam Sài Gòn. Một trong những tuyến đường có giá trị gia tăng “chóng mặt” không khác gì những khu trung tâm TP (tăng ít nhất 83% trong 2 năm qua) cùng tỉ suất cho thuê ổn định Hệ sinh thái ',
+        }],
+        investmentcontent1: [{
+            content: 'Ngoài tiện ích nội khu, trong bán kính 150m-800m là hệ sinh thái dịch vụ đáp ứng mọi nhu cầu của cư dân: hệ thống Ngân hàng, siêu thị và các cửa hàng F&B nối tiếp nhau. Dọc theo 3km của tuyến đường là hàng loạt các hạ tầng xã hội hoàn thiện: Bệnh viện (Tâm Đức, FV, Gia Khang), trung tâm tiêm chủng VNVC… Chuỗi trường học đa quốc gia – đa cấp bậc, cùng các trung tâm đào tạo năng khiếu - TDTT.',
+        }],
+        investmentcontent2: [{
+            content: 'Giữa thời điểm khan hiếm nguồn cung căn hộ nhưng nhu cầu sở hữu BĐS tại TP.HCM còn rất lớn. Với vị trí ấn tượng, The Peak Garden được xem như một kênh đầu tư cực hấp dẫn cho thị trường BĐS hạng sang tại khu trung tâm sầm uất NSG, nhờ cơ hội gia tăng giá trị BĐS vượt trội theo thời gian',
+        }],
+        investmentcontent3: [{
+            content: 'Hàng loạt công trình hạ tầng trọng điểm tại NSG đang được đẩy mạnh triển khai tạo sức bật lớn trong tiềm năng gia tăng giá trị của The Peak Garden trong tương lai gần: Hệ thống hầm chui, cầu vượt tại ngã tư Nguyễn Văn Linh - Nguyễn Hữu Thọ, cầu Thủ Thiêm 3 tổng VĐT 3,100 tỷ đồng, cầu Thủ Thiêm 4 tổng VĐT 5,200 tỷ đồng, cùng hàng loạt các công trình hạ tầng giao thông trọng điểm khác',
+        }],
+        investmentcontent4: [{
+            content: 'Cam kết mua lại sản phẩm với tỷ suất sinh lời hấp dẫn lên đến 14 %|năm. Đây được xem như một bảo chứng đắt giá về tiềm năng gia tăng giá trị cho The Peak Garden trong tương lai gần.',
+        }],
+        titleinvestment: [{
+            title: 'CƠ HỘI ĐẦU TƯ',
+        }],
+        titleinews: [{
+            title: 'Tin tức',
+        }],
+        notecopyright: [{
+            content: 'Thông tin, hình ảnh các tiện ích trong website này chỉ mang tính chất tương đối và có thể được điều chỉnh theo quyết định của Chủ đầu tư tại từng thời điểm đảm bảo phù hợp quy hoạch và thực tế thi công của Dự án. Các thông tin, cam kết chính thức sẽ được quy định cụ thể tại Hợp đồng mua bán. Việc quản lý, vận hành và kinh doanh dự án sẽ theo quy định của Ban Quản Lý',
+        }],
+        form: [{
+            title: 'ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN',
+            name: 'Họ tên:',
+            email: 'Email',
+            phone: 'Số điện thoại:',
+            mess: 'Lời nhắn:',
+            btn: 'Đăng ký'
+        }],
+        partnertitle: [{
+            title: 'ĐỐI TÁC DỰ ÁN',
         }],
         renderMenuLeftVi: function() {
             const htmlmenu = this.menuvileft.map(menuitem => {
@@ -200,6 +276,9 @@ $(function(){
                         </a>
                         <h4>${itemvid.title}</h4>`
             })
+            const htmlsubvd = this.video.map(itemvid => {
+                return `<p>${itemvid.subtitle}</p>`
+            })
             //timeline
             const htmltimeline1 = this.timeline1.map(item => {
                 return `<div class="timestamp">
@@ -247,8 +326,149 @@ $(function(){
                             </ul>
                         </div>`
             });
-
-
+            //tien ich
+            const htmltienich = this.tienich.map(item => {
+                return `<div class="card">
+                            <div>
+                                <a href="#" class="sliderLink">
+                                    <img class="lazyload" height="600" data-src="${item.image}">
+                                    <span>${item.title}</span>
+                                </a>
+                            </div>
+                        </div>`
+            });
+            //titlempp
+            const htmltitlempp = this.titlempp.map(item => {
+                return `<h4>${item.title}</h4>`;
+            })
+            //titletab
+            const htmltitletab = this.titletab.map(item => {
+                return `<button class="htp-tablink active" data-id="htp-tab-1">${item.tab0}</button>
+                <button class="htp-tablink" data-id="htp-tab-2">${item.tab1}</button>
+                <button class="htp-tablink" data-id="htp-tab-2">${item.tab2}</button>
+                <button class="htp-tablink" data-id="htp-tab-3">${item.tab3}</button>
+                <button class="htp-tablink" data-id="htp-tab-4">${item.tab4}</button>
+                <button class="htp-tablink" data-id="htp-tab-5">${item.tab5}</button>
+                <button class="htp-tablink" data-id="htp-tab-6">${item.tab6}</button>`
+            });
+            //investment
+            const htmlinves = this.investment.map(item => {
+                return `<button class="htp-tablink-inv ic-0" data-id="htp-tab-inv-0">
+                            <div class="icon-pos">
+                                <span class="icon-iven "><img class="lazyload" data-src="${item.img0}" alt="icon"/></span>
+                                <span class="title-iven">${item.tab0}</span>
+                            </div>  
+                        </button>
+                        <button class="htp-tablink-inv ic-1" data-id="htp-tab-inv-1">
+                            <div class="icon-pos">
+                                <span class="icon-iven "><img class="lazyload" data-src="${item.img1}" alt="icon"/></span>
+                                <span class="title-iven">${item.tab1}</span>
+                            </div>  
+                        </button>
+                        <button class="htp-tablink-inv ic-2 active" data-id="htp-tab-inv-2">
+                            <div class="icon-pos">
+                                <span class="icon-iven "><img class="lazyload" data-src="${item.img2}" alt="icon"/></span>
+                                <span class="title-iven">${item.tab2}</span>
+                            </div>
+                        </button>
+                        <button class="htp-tablink-inv ic-3" " data-id="htp-tab-inv-3 ">
+                            <div class="icon-pos ">
+                            <span class="icon-iven "><img class="lazyload" data-src="${item.img3}" alt="icon "/></span>
+                            <span class="title-iven ">${item.tab3}</span>
+                        </div>
+                        </button>
+                        <button class="htp-tablink-inv ic-4 " data-id="htp-tab-inv-4 ">
+                            <div class="icon-pos ">
+                            <span class="icon-iven "><img class="lazyload" data-src="${item.img4}" alt="icon "/></span>
+                            <span class="title-iven ">${item.tab4}</span>
+                        </div>
+                        </button>`
+            });
+            //investmentcontent0
+            const htmltabin0 = this.investmentcontent0.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //investmentcontent1
+            const htmltabin1 = this.investmentcontent1.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //investmentcontent2
+            const htmltabin2 = this.investmentcontent2.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //investmentcontent3
+            const htmltabin3 = this.investmentcontent3.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //investmentcontent4
+            const htmltabin4 = this.investmentcontent4.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //titleinvestment
+            const htmltitleinvestment = this.titleinvestment.map(item => {
+                return `<h4>${item.title}</h4>`;
+            });
+            //titleinews
+            const htmltitlenews = this.titleinews.map(item => {
+                return `<h4>${item.title}</h4>`;
+            });
+            //notecopyright
+            const htmlnoteconte = this.notecopyright.map(item => {
+                return `<p>${item.content}</p>`;
+            });
+            //form
+            const htmlfrtitle = this.form.map(item => {
+                return `${item.title}`;
+            });
+            const htmlfrname = this.form.map(item => {
+                return `${item.name}`;
+            });
+            const htmlfrphone = this.form.map(item => {
+                return `${item.phone}`;
+            });
+            const htmlfremail = this.form.map(item => {
+                return `${item.phone}`;
+            });
+            const htmlfrnote = this.form.map(item => {
+                return `${item.mess}`;
+            });
+            const htmlfrbtn = this.form.map(item => {
+                return `${item.btn}`;
+            });
+            //partnertitle
+            const htmltitlepart = this.partnertitle.map(item => {
+                return `<h4>${item.title}</h4>`;
+            });
 
             //render
             $('.item-banner-content').html(htmlintro.join(''));
@@ -257,9 +477,30 @@ $(function(){
             $('.wrapper-section-location').html(htmllocationOne.join(''));
             $('.ultili_title').html(htmllocationTwo.join(''));
             $('.video_title').html(htmlvideo.join(''));
+            $('.grid_video__content .subtitle-content').html(htmlsubvd.join(''));
             $('.slide-timeline-1').html(htmltimeline1.join(''));
             $('.slide-timeline-2').html(htmltimeline2.join(''));
             $('.slide-timeline-3').html(htmltimeline3.join(''));
+            $('#slider-slick-home').html(htmltienich.join(''));
+            $('.htp-tablinks-el').html(htmltitletab.join(''));
+            $('.grid_sth__content .place-title').html(htmltitlempp.join(''));
+            $('.htp-tablinks-investment').html(htmlinves.join(''));
+            $('.htp-tabcontents-investment .tab0.htp-tabcontent-inv').html(htmltabin0.join(''));
+            $('.htp-tabcontents-investment .tab1.htp-tabcontent-inv').html(htmltabin1.join(''));
+            $('.htp-tabcontents-investment .tab2.htp-tabcontent-inv').html(htmltabin2.join(''));
+            $('.htp-tabcontents-investment .tab3.htp-tabcontent-inv').html(htmltabin3.join(''));
+            $('.htp-tabcontents-investment .tab4.htp-tabcontent-inv').html(htmltabin4.join(''));
+            $('.homepage-banner-investment .item-banner .title').html(htmltitleinvestment.join(''));
+            $('.new--head .new-title').html(htmltitlenews.join(''));
+            $('.ft_description').html(htmlnoteconte.join(''));
+            $('.pnewle-form h3.text-center').html(htmlfrtitle.join(''));
+            $('.pnewle-form label.contactFormName').html(htmlfrphone.join(''));
+            $('.pnewle-form label.contactFormName').html(htmlfrname.join(''));
+            $('.pnewle-form label.contactFormName').html(htmlfremail.join(''));
+            $('.pnewle-form label.contactFormName').html(htmlfrnote.join(''));
+            $('.pnewle-form button.btn-outline').html(htmlfrbtn.join(''));
+            $('.brand-title').html(htmltitlepart.join(''));
+        
         },
         start: function() {
             this.renderMenuLeftVi();
@@ -267,6 +508,7 @@ $(function(){
             this.renderAllVi();
         }
     }
+
 /*=========================== NỘI DUNG TIẾNG ANH ===================================== */
     const appen = {
         menuvileft: [{
@@ -336,7 +578,8 @@ $(function(){
         }],
         video: [{
             imgvideo: './assets/images/title-en/6.png',
-            title: 'Trọn vẹn từng khoảng khắc'
+            title: 'Living in the moment',
+            subtitle:'Những đường nét thiết kế nhằm mang đến một sự thỏa mãn không chỉ về thị giác mà ở đó mọi giác quan đều được đánh thức ở mức tối đa, tạo nên một bản nhạc tuyệt vời cho gia đình bạn.'
         }],
         timeline1: [{
             time: '0 - 5 Minute',
@@ -363,6 +606,81 @@ $(function(){
             content2: 'Bitexco Tower',
             content3: 'Long Thanh – Dau Giay Expressway',
             content4: 'Ben Luc - Long Thanh Expressway'
+        }],
+        tienich: [{
+            image: './assets/images/utilities/banner-1.png',
+            title: 'Sky view swimming pool'
+        },{
+            image: './assets/images/utilities/banner-2.png',
+            title: 'Luna Park over 6000 m2'
+        },{
+            image: './assets/images/utilities/banner-3.png',
+            title: 'Paradise Lake over 3000 m2'
+        },{
+            image: './assets/images/utilities/banner-4.png',
+            title: 'The complex of hanging gardens with waterfalls inside the building'
+        },{
+            image: './assets/images/utilities/banner-5.png',
+            title: 'Onsen hot spring bath'
+        }],
+        titlempp: [{
+            title:'Floor plan'
+        }],
+        titletab: [{
+            tab0:'Master Plan',
+            tab1: '1st Floor Plan',
+            tab2: '2nd Floor Plan',
+            tab3: '3rd Floor Plan',
+            tab4: '4th Floor Plan',
+            tab5: '5th Floor',
+            tab6: 'Layout Floor',
+        }],
+        investment: [{
+            tab0: 'Golden Location',
+            img0: './assets/images/investment/icon-1.png',
+            tab1: 'All-in-one service:',
+            img1: './assets/images/investment/icon-2.png',
+            tab2: 'The value increases like wildfire',
+            img2: './assets/images/investment/icon-3.png',
+            tab3: 'A great infrastructure bounce',
+            img3: './assets/images/investment/icon-4.png',
+            tab4: 'The Gold commitment from the Investor',
+            img4: './assets/images/investment/icon-4.png',
+        }],
+        investmentcontent0: [{
+            content: 'Owning the rare remaining golden position, located at Nguyen Luong Bang road – the financial street of Nam Sai Gon area. This is one of the "vertical" value-added routes (increasing at least 83% in the past 2 years) with a stable rental rate',
+        }],
+        investmentcontent1: [{
+            content: 'Besides internal utilities, there’s a service ecosystem within a radius of 150m-800m to meet all the needs of residents: a banking system, a supermarket, and F&B stores in succession. Along 3km of the route is a series of completed social infrastructures: Hospitals (Tam Duc, FV, Gia Khang), VNVC vaccination center… multi-national and multi-level school, and centers talent sports training.',
+        }],
+        investmentcontent2: [{
+            content: 'Despite the scarcity of apartment supply, the demand for real estate ownership in Ho Chi Minh City is still very large. With an impressive location, The Peak Garden is an extremely attractive channel investment for the luxury real estate market in the Nam Sai Gon area with increasing outstanding value over time.',
+        }],
+        investmentcontent3: [{
+            content: 'A series of key infrastructure projects at NSG has been being promoted, creating a great bounce for The Peak in the near future: Underpass system, the overpass at the intersection of Nguyen Van Linh - Nguyen Huu Tho road, Thu Thiem 3 bridge with a total investment of 3,100 billion VND, Thu Thiem 4 bridge with a total investment of 5,200 billion VND, and a series of other key transport infrastructure projects.',
+        }],
+        investmentcontent4: [{
+            content: 'Commit to buy back products with attractive profit rates up to 14% | year. This is considered an expensive guarantee for the potential of The Peak Garden to increase its value in the future.',
+        }],
+        titleinvestment: [{
+            title: 'INVESTMENT OPPORTUNITIES',
+        }],
+        titleinews: [{
+            title: 'News',
+        }],
+        notecopyright: [{
+            content: "Information and images of utilities in this website are photographic images and can be adjusted at the discretion of the Investor at a specific time to ensure compliance with the project's planning and actual construction. The official information and commitments will be specified in the Sales Contract. The management, operation, and business of the project will follow the regulations of the Project Management Board"
+        }],
+        form: [{
+            title: 'GET PROJECT INFORMATION HERE',
+            name: 'Name:',
+            email: 'Email',
+            phone: 'Phone:',
+            mess: 'Notes:',
+            btn: 'Register'
+        }],
+        partnertitle: [{
+            title: 'Partner',
         }],
         renderMenuLeftEn: function() {
             const htmls = this.menuvileft.map(menuitem => {
@@ -456,6 +774,9 @@ $(function(){
                         </a>
                         <h4 class="hide">${itemvid.title}</h4>`
             })
+            const htmlsubvd = this.video.map(itemvid => {
+                return `<p>${itemvid.subtitle}</p>`;
+            })
             //timeline
             const htmltimeline1 = this.timeline1.map(item => {
                 return `<div class="timestamp">
@@ -503,16 +824,182 @@ $(function(){
                             </ul>
                         </div>`
             });
-            
+            //tien ich
+            const htmltienich = this.tienich.map(item => {
+                return `<div class="card">
+                            <div>
+                                <a href="#" class="sliderLink">
+                                    <img class="lazyload" height="600" data-src="${item.image}">
+                                    <span>${item.title}</span>
+                                </a>
+                            </div>
+                        </div>`
+            });
+            //titlempp
+            const htmltitlempp = this.titlempp.map(item => {
+                return `<h4>${item.title}</h4>`;
+            })
+             //titletab
+             const htmltitletab = this.titletab.map(item => {
+                return `<button class="htp-tablink active" data-id="htp-tab-1">${item.tab0}</button>
+                <button class="htp-tablink" data-id="htp-tab-2">${item.tab1}</button>
+                <button class="htp-tablink" data-id="htp-tab-2">${item.tab2}</button>
+                <button class="htp-tablink" data-id="htp-tab-3">${item.tab3}</button>
+                <button class="htp-tablink" data-id="htp-tab-4">${item.tab4}</button>
+                <button class="htp-tablink" data-id="htp-tab-5">${item.tab5}</button>
+                <button class="htp-tablink" data-id="htp-tab-6">${item.tab6}</button>`
+            });
+            //investment
+            const htmlinves = this.investment.map(item => {
+                return `<button class="htp-tablink-inv ic-0" data-id="htp-tab-inv-0">
+                            <div class="icon-pos">
+                                <span class="icon-iven "><img class="lazyload" data-src="${item.img0}" alt="icon"/></span>
+                                <span class="title-iven">${item.tab0}</span>
+                            </div>  
+                        </button>
+                        <button class="htp-tablink-inv ic-1" data-id="htp-tab-inv-1">
+                            <div class="icon-pos">
+                                <span class="icon-iven "><img class="lazyload" data-src="${item.img1}" alt="icon"/></span>
+                                <span class="title-iven">${item.tab1}</span>
+                            </div>  
+                        </button>
+                        <button class="htp-tablink-inv ic-2 active" data-id="htp-tab-inv-2">
+                            <div class="icon-pos">
+                                <span class="icon-iven "><img class="lazyload" data-src="${item.img2}" alt="icon"/></span>
+                                <span class="title-iven">${item.tab2}</span>
+                            </div>
+                        </button>
+                        <button class="htp-tablink-inv ic-3" " data-id="htp-tab-inv-3 ">
+                            <div class="icon-pos ">
+                            <span class="icon-iven "><img class="lazyload" data-src="${item.img3}" alt="icon "/></span>
+                            <span class="title-iven ">${item.tab3}</span>
+                        </div>
+                        </button>
+                        <button class="htp-tablink-inv ic-4 " data-id="htp-tab-inv-4 ">
+                            <div class="icon-pos ">
+                            <span class="icon-iven "><img class="lazyload" data-src="${item.img4}" alt="icon "/></span>
+                            <span class="title-iven ">${item.tab4}</span>
+                        </div>
+                        </button>`
+            });
+            //investmentcontent0
+            const htmltabin0 = this.investmentcontent0.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //investmentcontent1
+            const htmltabin1 = this.investmentcontent1.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //investmentcontent2
+            const htmltabin2 = this.investmentcontent2.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //investmentcontent3
+            const htmltabin3 = this.investmentcontent3.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+            //investmentcontent4
+            const htmltabin4 = this.investmentcontent4.map(item => {
+                return `<div class="slider-tabcontent owl-carousel owl-theme owl-nav-style-1">
+                            <div class="item ">
+                                <div class="item__content ">
+                                    ${item.content}
+                                </div>
+                            </div>
+                        </div>`
+            });
+             //titleinvestment
+            const htmltitleinvestment = this.titleinvestment.map(item => {
+                return `<h4>${item.title}</h4>`;
+            });
+            //titleinews
+            const htmltitlenews = this.titleinews.map(item => {
+                return `<h4>${item.title}</h4>`;
+            });
+             //notecopyright
+             const htmlnoteconte = this.notecopyright.map(item => {
+                return `<p>${item.content}</p>`;
+            });
+            //form
+            const htmlfrtitle = this.form.map(item => {
+                return `${item.title}`;
+            });
+            const htmlfrname = this.form.map(item => {
+                return `${item.name}`;
+            });
+            const htmlfrphone = this.form.map(item => {
+                return `${item.phone}`;
+            });
+            const htmlfremail = this.form.map(item => {
+                return `${item.phone}`;
+            });
+            const htmlfrnote = this.form.map(item => {
+                return `${item.mess}`;
+            });
+            const htmlfrbtn = this.form.map(item => {
+                return `${item.btn}`;
+            });
+            //partnertitle
+            const htmltitlepart = this.partnertitle.map(item => {
+                return `<h4>${item.title}</h4>`;
+            });
+
             $('.item-banner-content').html(htmlintro.join(''));
             $('.sth_title').html(htmlsttt.join(''));
             $('.sth_item-content').html(htmlstcontent.join(''));
             $('.wrapper-section-location').html(htmllocationOne.join(''));
             $('.ultili_title').html(htmllocationTwo.join(''));
             $('.video_title').html(htmlvideo.join(''));
+            $('.grid_video__content .subtitle-content').html(htmlsubvd.join(''));
             $('.slide-timeline-1').html(htmltimeline1.join(''));
             $('.slide-timeline-2').html(htmltimeline2.join(''));
             $('.slide-timeline-3').html(htmltimeline3.join(''));
+            $('#slider-slick-home').html(htmltienich.join(''));
+            $('.htp-tablinks-el').html(htmltitletab.join(''));
+            $('.grid_sth__content .place-title').html(htmltitlempp.join(''));
+            $('.htp-tablinks-investment').html(htmlinves.join(''));
+            $('.htp-tabcontents-investment .tab0.htp-tabcontent-inv').html(htmltabin0.join(''));
+            $('.htp-tabcontents-investment .tab1.htp-tabcontent-inv').html(htmltabin1.join(''));
+            $('.htp-tabcontents-investment .tab2.htp-tabcontent-inv').html(htmltabin2.join(''));
+            $('.htp-tabcontents-investment .tab3.htp-tabcontent-inv').html(htmltabin3.join(''));
+            $('.htp-tabcontents-investment .tab4.htp-tabcontent-inv').html(htmltabin4.join(''));
+            $('.homepage-banner-investment .item-banner .title').html(htmltitleinvestment.join(''));
+            $('.new--head .new-title').html(htmltitlenews.join(''));
+            $('.ft_description').html(htmlnoteconte.join(''));
+            $('.pnewle-form h3.text-center').html(htmlfrtitle.join(''));
+            $('.pnewle-form label.contactFormName').html(htmlfrphone.join(''));
+            $('.pnewle-form label.contactFormName').html(htmlfrname.join(''));
+            $('.pnewle-form label.contactFormName').html(htmlfremail.join(''));
+            $('.pnewle-form label.contactFormName').html(htmlfrnote.join(''));
+            $('.pnewle-form button.btn-outline').html(htmlfrbtn.join(''));
+            $('.brand-title').html(htmltitlepart.join(''));
+        
+
+
         },
         start: function() {
             this.renderMenuLeftEn();
