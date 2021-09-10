@@ -343,8 +343,8 @@ $(function(){
             })
             //titletab
             const htmltitletab = this.titletab.map(item => {
-                return `<button class="htp-tablink active" data-id="htp-tab-1">${item.tab0}</button>
-                <button class="htp-tablink" data-id="htp-tab-2">${item.tab1}</button>
+                return `<button class="htp-tablink active" data-id="htp-tab-0">${item.tab0}</button>
+                <button class="htp-tablink" data-id="htp-tab-1">${item.tab1}</button>
                 <button class="htp-tablink" data-id="htp-tab-2">${item.tab2}</button>
                 <button class="htp-tablink" data-id="htp-tab-3">${item.tab3}</button>
                 <button class="htp-tablink" data-id="htp-tab-4">${item.tab4}</button>
