@@ -685,7 +685,7 @@ position: relative;
             margin-top: 40px;
             width: 75%;
             @media (max-width: 991px) {
-                width: 75%;
+                width: 100%;
             }
         }
         .video-content {
@@ -1373,9 +1373,10 @@ background: #f9f9f9;
     }
 }
 /* menu scroll */
+
 * {
     scroll-margin-top: 150px;
-  }
+}
 .main-header.affix-mobile {
 	position: fixed;
 	top: 0;

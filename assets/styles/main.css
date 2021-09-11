@@ -681,7 +681,7 @@ img {
 }
 @media (max-width: 991px) {
   .section-video .wrapper-video .grid_video__content .subtitle-content {
-    width: 75%;
+    width: 100%;
   }
 }
 .section-video .wrapper-video .grid_video__content .video-content {
