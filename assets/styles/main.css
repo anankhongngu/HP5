@@ -1345,6 +1345,10 @@ img {
 }
 
 /* menu scroll */
+* {
+  scroll-margin-top: 150px;
+}
+
 .main-header.affix-mobile {
   position: fixed;
   top: 0;
