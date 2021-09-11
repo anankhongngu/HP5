@@ -137,6 +137,11 @@ $(document).ready(function() {
 		$(".sub-head").toggleClass("active");
         $("#menu-open-mob").toggleClass("active");
 	})
+    $("#close-menu").click(function(){
+		$(".sub-head").removeClass("active");
+        $("#menu-open-mob").removeClass("active");
+	})
+    
     /* */
     $('#formbaogia').submit(function(e){
         e.preventDefault();

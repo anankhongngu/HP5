@@ -40,8 +40,11 @@ $(function(){
             menu: 'Liên hệ',
             link: '#footer'
         }],
+        titlemain:[{
+            img: './assets/images/title-news/title-0-vi.png'
+        }],
         introduce: [{
-            title: 'Liệu pháp không gian sống "Thời đại lo âu',
+            img: './assets/images/title-news/title-1-vi.png',
             desc: 'Green Star Sky Garden không đơn thuần của một căn hộ để ở, đây được xem như tuyệt tác độc bản là nơi khởi nguồn đặc quyền về một cuộc sống: Thanh lọc cơ thể - Bảo vệ sức khoẻ - Khơi nguồn năng lượng thể chất lẫn tinh thần'
         }],
         ecological: [{
@@ -225,9 +228,9 @@ $(function(){
         },
         renderAllVi: function() {
             const htmlintro = this.introduce.map(intro => {
-                return `<div class="banner_title title-introduce">
-                            <h4>${intro.title}</h4>
-                        </div>
+                return `<a class="item-link" href="/">
+                            <img class="lazyload" width="630" height="100" data-src="${intro.img}" alt="banner">
+                        </a>
                         <div class="banner_subtitle">
                             <p>${intro.desc}</p>
                         </div>`
@@ -501,6 +504,12 @@ $(function(){
                             <a href="${item.link}">${item.title}</a>
                         </li>`;
             });
+            //htmltitlemain
+            const htmltitlemain = this.titlemain.map(item => {
+                return `<a class="item-link" href="/">
+                        <img class="lazyload" width="630" height="100" data-src="${item.img}" alt="banner">
+                    </a>`;
+            });
 
             //render
             $('.item-banner-content').html(htmlintro.join(''));
@@ -533,6 +542,7 @@ $(function(){
             $('.pnewle-form button.btn-outline').html(htmlfrbtn.join(''));
             $('.brand-title').html(htmltitlepart.join(''));
             $('.nav-mobile-menu #menu-main-menu').html(htmlmenumobile.join(''));
+            $('.title-banner-main').html(htmltitlemain.join(''));
         
         },
         start: function() {
@@ -570,8 +580,11 @@ $(function(){
             menu: 'Contacts',
             link: '#footer'
         }],
+        titlemain: [{
+            img: './assets/images/title-news/title-0-en.png'
+        }],
         introduce: [{
-            title: 'Spatial Therapy "Anxiety Age"',
+            img: './assets/images/title-news/title-1-en.png',
             desc: 'The Peak Garden is not just an apartment to live in, this is considered as a unique masterpiece and the originate of privileged: Purifying Body - Protecting Health - Unleashing Physical and Mental Energy '
         }],
         ecological: [{
@@ -755,9 +768,9 @@ $(function(){
         },
         renderAllEn: function() {
             const htmlintro = this.introduce.map(intro => {
-                return `<div class="banner_title title-introduce">
-                            <h4>${intro.title}</h4>
-                        </div>
+                return `<a class="item-link" href="/">
+                            <img class="lazyload" width="630" height="100" data-src="${intro.img}" alt="banner">
+                        </a>
                         <div class="banner_subtitle">
                             <p>${intro.desc}</p>
                         </div>`
@@ -1032,6 +1045,12 @@ $(function(){
                             <a href="${item.link}">${item.title}</a>
                         </li>`;
             });
+            //htmltitlemain
+            const htmltitlemain = this.titlemain.map(item => {
+                return `<a class="item-link" href="/">
+                        <img class="lazyload" width="630" height="100" data-src="${item.img}" alt="banner">
+                    </a>`;
+            });
 
             $('.item-banner-content').html(htmlintro.join(''));
             $('.sth_title').html(htmlsttt.join(''));
@@ -1063,8 +1082,8 @@ $(function(){
             $('.pnewle-form button.btn-outline').html(htmlfrbtn.join(''));
             $('.brand-title').html(htmltitlepart.join(''));
             $('.nav-mobile-menu #menu-main-menu').html(htmlmenumobile.join(''));
+            $('.title-banner-main').html(htmltitlemain.join(''));
         
-
 
         },
         start: function() {
@@ -1083,13 +1102,13 @@ $(function(){
    
     if($(window).width() < 1024){ 
         if(localStorage.getItem('template') == 'vi'){
-            $('.lang-mobile').html('<span>VI</span>');
+            $('.lang-mobile').html('<span>EN</span>');
             $('.lang-mobile').addClass('change-en');
         }else if(localStorage.getItem('template') == 'en'){             
-            $('.lang-mobile').html('<span class="lang-change-vi">EN</span>');
+            $('.lang-mobile').html('<span>VI</span>');
             $('.lang-mobile').addClass('change-vi');
         }else { 
-            $('.lang-mobile').html('<span class="lang-change-en">VI</span>');
+            $('.lang-mobile').html('<span>EN</span>');
             $('.lang-mobile').addClass('change-en');
         }
         $('.lang-mobile.change-en').on('click', function(){
