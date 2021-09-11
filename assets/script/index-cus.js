@@ -486,7 +486,7 @@ $(function(){
                 return `${item.phone}`;
             });
             const htmlfremail = this.form.map(item => {
-                return `${item.phone}`;
+                return `${item.email}`;
             });
             const htmlfrnote = this.form.map(item => {
                 return `${item.mess}`;
@@ -1027,7 +1027,7 @@ $(function(){
                 return `${item.phone}`;
             });
             const htmlfremail = this.form.map(item => {
-                return `${item.phone}`;
+                return `${item.email}`;
             });
             const htmlfrnote = this.form.map(item => {
                 return `${item.mess}`;
