@@ -16,29 +16,29 @@ $(function(){
     const app = {
         menuvileft: [{
             menu: 'Giới thiệu',
-            link: '/'
+            link: '#block-introduce'
         },{
             menu: 'Vị trí',
-            link: '/'
+            link: '#block-location'
         },{
             menu: 'Tiện ích',
-            link: '/'
+            link: '#block-utili'
         },{
             menu: 'Mặt bằng',
-            link: '/'
+            link: '#block-plane'
         }],
         menuviright: [{
             menu: 'Căn hộ',
-            link: '/'
+            link: '#block-video'
         },{
             menu: 'Cơ hội đầu tư',
-            link: '/'
+            link: '#block-investment'
         },{
             menu: 'Tin tức',
-            link: '/'
+            link: '#block-news'
         },{
             menu: 'Liên hệ',
-            link: '/'
+            link: '#footer'
         }],
         introduce: [{
             title: 'Liệu pháp không gian sống "Thời đại lo âu',
@@ -53,17 +53,17 @@ $(function(){
             title: 'Cư dân dự án được thoả sức hoà mình trong hệ thống mảng xanh nội khu theo phương đứng đẳng cấp, giúp điều hoà nhiệt độ toàn khu với Công viên Luna park hơn 6.000m2, hồ thiên đường lãng mạn hơn 3.000m2 và hệ thống vườn treo thác nước len lõi trong mỗi toà nhà.',
             number: './assets/images/banner/1.png'
         },{
-            image: './assets/images/banner/group2.png',
+            image: './assets/images/banner/group2.jpg',
             link:'/',
             title: 'Mỗi căn hộ đều được tối ưu hoá mặt thoáng với nhiều cửa sổ mở rộng tầm view thoáng đãng giúp đón ánh sáng và không khí trong lành vào ngôi nhà của bạn.',
             number: './assets/images/banner/2.png'
         },{
-            image: './assets/images/banner/group3.png',
+            image: './assets/images/banner/group3.jpg',
             link:'/',
             title: 'Cư dân dự án được thoả sức hoà mình trong hệ thống mảng xanh nội khu theo phương đứng đẳng cấp, giúp điều hoà nhiệt độ toàn khu với Công viên Luna park hơn 6.000m2, hồ thiên đường lãng mạn hơn 3.000m2 và hệ thống vườn treo thác nước len lõi trong mỗi toà nhà. ',
             number: './assets/images/banner/3.png'
         },{
-            image: './assets/images/banner/group4.png',
+            image: './assets/images/banner/group4.jpg',
             link:'/',
             title: 'Với góc nhìn từ các căn hộ trên cao, cư dân được chiêm ngưỡng vẻ đẹp bình yên và thư thái của cỏ cây sông nước bao bọc xung quanh bởi KĐT Phú Mỹ Hưng được quy hoạch tiêu chuẩn và bài bản bậc nhất.',
             number: './assets/images/banner/4.png'
@@ -111,19 +111,19 @@ $(function(){
             content4: 'Cao tốc Bến Lức - Long Thành'
         }],
         tienich: [{
-            image: './assets/images/utilities/banner-1.png',
+            image: './assets/images/utilities/banner-1.jpg',
             title: 'Hồ bơi sky view'
         },{
-            image: './assets/images/utilities/banner-2.png',
+            image: './assets/images/utilities/banner-2.jpg',
             title: 'Công viên Luna Park hơn 6000 m2'
         },{
-            image: './assets/images/utilities/banner-3.png',
+            image: './assets/images/utilities/banner-3.jpg',
             title: 'Hồ thiên đường hơn 3000 m2 '
         },{
-            image: './assets/images/utilities/banner-4.png',
+            image: './assets/images/utilities/banner-4.jpg',
             title: 'Tổ hợp vườn treo thác nước trong nhà'
         },{
-            image: './assets/images/utilities/banner-5.png',
+            image: './assets/images/utilities/banner-5.jpg',
             title: 'Hồ tắm khoáng nóng onsen'
         }],
         titlempp: [{
@@ -185,6 +185,32 @@ $(function(){
         partnertitle: [{
             title: 'ĐỐI TÁC DỰ ÁN',
         }],
+        menumobile: [{
+            title: 'Giới thiệu',
+            link: '#block-introduce'
+        },{
+            title: 'Vị trí',
+            link: '#block-location'
+        },{
+            title: 'Tiện tích',
+            link: '#block-utili'
+        }
+        ,{
+            title: 'Mặt bằng',
+            link: '#block-plane'
+        }
+        ,{
+            title: 'Căn hộ',
+            link: '#block-video'
+        }
+        ,{
+            title: 'Cơ hội đầu tư',
+            link: '#block-investment'
+        }
+        ,{
+            title: 'Tin tức',
+            link: '#block-news'
+        }],
         renderMenuLeftVi: function() {
             const htmlmenu = this.menuvileft.map(menuitem => {
                 return `<li><a href="${menuitem.link}">${menuitem.menu}</a></li>`
@@ -192,7 +218,7 @@ $(function(){
             menuleft.html(htmlmenu.join(''));
         },
         renderMenuRightVi: function() {
-            const htmls = this.menuvileft.map(menuitem => {
+            const htmls = this.menuviright.map(menuitem => {
                 return `<li><a href="${menuitem.link}">${menuitem.menu}</a></li>`
             })
             menuright.html(htmls.join(''));
@@ -469,6 +495,12 @@ $(function(){
             const htmltitlepart = this.partnertitle.map(item => {
                 return `<h4>${item.title}</h4>`;
             });
+            //menumobile
+            const htmlmenumobile = this.menumobile.map(item => {
+                return `<li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                            <a href="${item.link}">${item.title}</a>
+                        </li>`;
+            });
 
             //render
             $('.item-banner-content').html(htmlintro.join(''));
@@ -494,12 +526,13 @@ $(function(){
             $('.new--head .new-title').html(htmltitlenews.join(''));
             $('.ft_description').html(htmlnoteconte.join(''));
             $('.pnewle-form h3.text-center').html(htmlfrtitle.join(''));
-            $('.pnewle-form label.contactFormName').html(htmlfrphone.join(''));
+            $('.pnewle-form label.contactFormPhone').html(htmlfrphone.join(''));
             $('.pnewle-form label.contactFormName').html(htmlfrname.join(''));
-            $('.pnewle-form label.contactFormName').html(htmlfremail.join(''));
-            $('.pnewle-form label.contactFormName').html(htmlfrnote.join(''));
+            $('.pnewle-form label.contactFormEmail').html(htmlfremail.join(''));
+            $('.pnewle-form label.contactFormBody').html(htmlfrnote.join(''));
             $('.pnewle-form button.btn-outline').html(htmlfrbtn.join(''));
             $('.brand-title').html(htmltitlepart.join(''));
+            $('.nav-mobile-menu #menu-main-menu').html(htmlmenumobile.join(''));
         
         },
         start: function() {
@@ -513,29 +546,29 @@ $(function(){
     const appen = {
         menuvileft: [{
             menu: 'About us',
-            link: '/'
+            link: '#block-introduce'
         },{
             menu: 'Location',
-            link: '/'
+            link: '#block-location'
         },{
             menu: 'Utilities',
-            link: '/'
+            link: '#block-utili'
         },{
             menu: 'Plane',
-            link: '/'
+            link: '#block-plane'
         }],
         menuviright: [{
             menu: 'Apartment',
-            link: '/'
+            link: '#block-video'
         },{
             menu: 'Investment Opportunities',
-            link: '/'
+            link: '#block-investment'
         },{
             menu: 'News',
-            link: '/'
+            link: '#block-news'
         },{
             menu: 'Contacts',
-            link: '/'
+            link: '#footer'
         }],
         introduce: [{
             title: 'Spatial Therapy "Anxiety Age"',
@@ -550,17 +583,17 @@ $(function(){
             title: 'Inside each Wellness Apartment is equipped with an air purifier system, infrared heating lamp, antibacterial paint, etc. to help purify and perfectly protect the health of the owner.',
             number: './assets/images/banner/1.png'
         },{
-            image: './assets/images/banner/group2.png',
+            image: './assets/images/banner/group2.jpg',
             link:'/',
             title: 'Each apartment has many windows to widen the view for catching shining and fresh air into the house.',
             number: './assets/images/banner/2.png'
         },{
-            image: './assets/images/banner/group3.png',
+            image: './assets/images/banner/group3.jpg',
             link:'/',
             title: 'Residents can freely immerse themselves in the high-class vertical internal green system, helping to regulate the temperature of the whole area with Luna park over 6,000m2, romantic paradise lake over 3,000m2, and hanging waterfall garden system in each building.',
             number: './assets/images/banner/3.png'
         },{
-            image: './assets/images/banner/group4.png',
+            image: './assets/images/banner/group4.jpg',
             link:'/',
             title: 'With the view from the high floor apartments, residents can admire the peaceful sightseeings with trees and rivers surrounded by the most standard living urban - Phu My Hung area.',
             number: './assets/images/banner/4.png'
@@ -608,19 +641,19 @@ $(function(){
             content4: 'Ben Luc - Long Thanh Expressway'
         }],
         tienich: [{
-            image: './assets/images/utilities/banner-1.png',
+            image: './assets/images/utilities/banner-1.jpg',
             title: 'Sky view swimming pool'
         },{
-            image: './assets/images/utilities/banner-2.png',
+            image: './assets/images/utilities/banner-2.jpg',
             title: 'Luna Park over 6000 m2'
         },{
-            image: './assets/images/utilities/banner-3.png',
+            image: './assets/images/utilities/banner-3.jpg',
             title: 'Paradise Lake over 3000 m2'
         },{
-            image: './assets/images/utilities/banner-4.png',
+            image: './assets/images/utilities/banner-4.jpg',
             title: 'The complex of hanging gardens with waterfalls inside the building'
         },{
-            image: './assets/images/utilities/banner-5.png',
+            image: './assets/images/utilities/banner-5.jpg',
             title: 'Onsen hot spring bath'
         }],
         titlempp: [{
@@ -682,6 +715,32 @@ $(function(){
         partnertitle: [{
             title: 'Partner',
         }],
+        menumobile: [{
+            title: 'About us',
+            link: '#block-introduce'
+        },{
+            title: 'Location',
+            link: '#block-location'
+        },{
+            title: 'Utilities',
+            link: '#block-utili'
+        }
+        ,{
+            title: 'Plane',
+            link: '#block-plane'
+        }
+        ,{
+            title: 'Apartment',
+            link: '#block-video'
+        }
+        ,{
+            title: 'Investment Opportunities',
+            link: '#block-investment'
+        }
+        ,{
+            title: 'News',
+            link: '#block-news'
+        }],
         renderMenuLeftEn: function() {
             const htmls = this.menuvileft.map(menuitem => {
                 return `<li><a href="${menuitem.link}">${menuitem.menu}</a></li>`
@@ -689,7 +748,7 @@ $(function(){
             menuleft.html(htmls.join(''));
         },
         renderMenuRightEn: function() {
-            const htmls = this.menuvileft.map(menuitem => {
+            const htmls = this.menuviright.map(menuitem => {
                 return `<li><a href="${menuitem.link}">${menuitem.menu}</a></li>`
             })
             menuright.html(htmls.join(''));
@@ -967,6 +1026,12 @@ $(function(){
             const htmltitlepart = this.partnertitle.map(item => {
                 return `<h4>${item.title}</h4>`;
             });
+            //menumobile
+            const htmlmenumobile = this.menumobile.map(item => {
+                return `<li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                            <a href="${item.link}">${item.title}</a>
+                        </li>`;
+            });
 
             $('.item-banner-content').html(htmlintro.join(''));
             $('.sth_title').html(htmlsttt.join(''));
@@ -991,12 +1056,13 @@ $(function(){
             $('.new--head .new-title').html(htmltitlenews.join(''));
             $('.ft_description').html(htmlnoteconte.join(''));
             $('.pnewle-form h3.text-center').html(htmlfrtitle.join(''));
-            $('.pnewle-form label.contactFormName').html(htmlfrphone.join(''));
+            $('.pnewle-form label.contactFormPhone').html(htmlfrphone.join(''));
             $('.pnewle-form label.contactFormName').html(htmlfrname.join(''));
-            $('.pnewle-form label.contactFormName').html(htmlfremail.join(''));
-            $('.pnewle-form label.contactFormName').html(htmlfrnote.join(''));
+            $('.pnewle-form label.contactFormEmail').html(htmlfremail.join(''));
+            $('.pnewle-form label.contactFormBody').html(htmlfrnote.join(''));
             $('.pnewle-form button.btn-outline').html(htmlfrbtn.join(''));
             $('.brand-title').html(htmltitlepart.join(''));
+            $('.nav-mobile-menu #menu-main-menu').html(htmlmenumobile.join(''));
         
 
 
@@ -1015,4 +1081,24 @@ $(function(){
         appen.start();
     }
    
+    if($(window).width() < 1024){ 
+        if(localStorage.getItem('template') == 'vi'){
+            $('.lang-mobile').html('<span>VI</span>');
+            $('.lang-mobile').addClass('change-en');
+        }else if(localStorage.getItem('template') == 'en'){             
+            $('.lang-mobile').html('<span class="lang-change-vi">EN</span>');
+            $('.lang-mobile').addClass('change-vi');
+        }else { 
+            $('.lang-mobile').html('<span class="lang-change-en">VI</span>');
+            $('.lang-mobile').addClass('change-en');
+        }
+        $('.lang-mobile.change-en').on('click', function(){
+            window.location = url;
+            localStorage.setItem('template', 'en');
+        });
+        $('.lang-mobile.change-vi').on('click', function(){
+            window.location = url;
+            localStorage.setItem('template', 'vi');
+        });
+    }
 })

@@ -340,7 +340,7 @@ position: relative;
 .section-location {
 padding: 100px 0 50px;
 position: relative;
-background-image: url('../images/banner/bg-location.png');
+background-image: url('../images/banner/bg-location.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 .lane {
@@ -1269,10 +1269,10 @@ background: #f9f9f9;
 
 @media (min-width: 1024px) {
     .main-nav.nav-left {
-        flex: 0 0 40%;
+        flex: 0 0 42%;
     }
     .main-nav.nav-right {
-        flex: 0 0 40%;
+        flex: 0 0 42%;
     }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -1341,7 +1341,12 @@ background: #f9f9f9;
 .icon-pos {
     min-height: 187px;
 }
-
+#owl-brand-logo  {
+    .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+}
 
 
 
