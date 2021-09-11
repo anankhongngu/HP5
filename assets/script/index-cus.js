@@ -4,11 +4,13 @@ $(function(){
     }
     const url = window.location.href;
     $('.lang__vi').on('click', function(){
-        window.location = url;
+        //window.location = url;
+        location.reload();
         localStorage.setItem('template', 'vi');
     })
     $('.lang__en').on('click', function(){
-        window.location = url;
+        //window.location = url;
+        location.reload();
         localStorage.setItem('template', 'en');
     });
     const menuleft = $('.menu-left-pc');
@@ -372,13 +374,13 @@ $(function(){
             })
             //titletab
             const htmltitletab = this.titletab.map(item => {
-                return `<button class="htp-tablink active" data-id="htp-tab-0">${item.tab0}</button>
-                <button class="htp-tablink" data-id="htp-tab-1">${item.tab1}</button>
-                <button class="htp-tablink" data-id="htp-tab-2">${item.tab2}</button>
-                <button class="htp-tablink" data-id="htp-tab-3">${item.tab3}</button>
-                <button class="htp-tablink" data-id="htp-tab-4">${item.tab4}</button>
-                <button class="htp-tablink" data-id="htp-tab-5">${item.tab5}</button>
-                <button class="htp-tablink" data-id="htp-tab-6">${item.tab6}</button>`
+                return `<button class="htp-tablink active" data-id="htp-tab-1">${item.tab0}</button>
+                <button class="htp-tablink" data-id="htp-tab-2">${item.tab1}</button>
+                <button class="htp-tablink" data-id="htp-tab-3">${item.tab2}</button>
+                <button class="htp-tablink" data-id="htp-tab-4">${item.tab3}</button>
+                <button class="htp-tablink" data-id="htp-tab-5">${item.tab4}</button>
+                <button class="htp-tablink" data-id="htp-tab-6">${item.tab5}</button>
+                <button class="htp-tablink" data-id="htp-tab-7">${item.tab6}</button>`
             });
             //investment
             const htmlinves = this.investment.map(item => {
@@ -915,11 +917,11 @@ $(function(){
              const htmltitletab = this.titletab.map(item => {
                 return `<button class="htp-tablink active" data-id="htp-tab-1">${item.tab0}</button>
                 <button class="htp-tablink" data-id="htp-tab-2">${item.tab1}</button>
-                <button class="htp-tablink" data-id="htp-tab-2">${item.tab2}</button>
-                <button class="htp-tablink" data-id="htp-tab-3">${item.tab3}</button>
-                <button class="htp-tablink" data-id="htp-tab-4">${item.tab4}</button>
-                <button class="htp-tablink" data-id="htp-tab-5">${item.tab5}</button>
-                <button class="htp-tablink" data-id="htp-tab-6">${item.tab6}</button>`
+                <button class="htp-tablink" data-id="htp-tab-3">${item.tab2}</button>
+                <button class="htp-tablink" data-id="htp-tab-4">${item.tab3}</button>
+                <button class="htp-tablink" data-id="htp-tab-5">${item.tab4}</button>
+                <button class="htp-tablink" data-id="htp-tab-6">${item.tab5}</button>
+                <button class="htp-tablink" data-id="htp-tab-7">${item.tab6}</button>`
             });
             //investment
             const htmlinves = this.investment.map(item => {
