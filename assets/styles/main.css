@@ -436,9 +436,28 @@ img {
   padding: 0px 40px;
   display: flex;
   justify-content: center;
-  border-top: 2px solid #376165;
   position: relative;
   transition: all 200ms ease-in;
+}
+@media (min-width: 992px) {
+  .wrapper-block_timelime .wrapper__timeline .timeline {
+    width: 80%;
+    margin: 70px auto;
+  }
+}
+.wrapper-block_timelime .wrapper__timeline {
+  position: relative;
+}
+.wrapper-block_timelime .wrapper__timeline::after {
+  content: "";
+  border-top: 2px solid #376165;
+  width: 100%;
+  position: absolute;
+  top: 37px;
+  z-index: 1;
+}
+.wrapper-block_timelime .status ul::before {
+  z-index: 2;
 }
 .wrapper-block_timelime .status ul {
   font-weight: 600;
