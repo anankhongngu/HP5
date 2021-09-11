@@ -163,4 +163,22 @@ jQuery(document).on("click", ".back-to-top", function(){
         scrollTop: 0			
     }, 300);
 });
+jQuery(window).scroll(function() {
+	/* scroll header */
+	if (jQuery(window).width() < 768) {
+		var scroll = $(window).scrollTop();
+		if (scroll < 320) {
+			$(".main-header").removeClass("scroll-menu");	
+		} else {
+			$(".main-header").addClass("scroll-menu");		
+		}
+	} else {
+		var height_header =	$('.main-header').height();
+		if( jQuery(window).scrollTop() >= height_header ) {			
+			jQuery('.main-header').addClass('affix-mobile');
+		}	else {
+			jQuery('.main-header').removeClass('affix-mobile');
+		}
+	}
+});
 
