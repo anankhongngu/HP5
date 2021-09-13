@@ -113,7 +113,7 @@ background: #004951;
                     font-size: 14px;
                     text-transform: uppercase;
                     position: relative;
-                    padding: 0 10px;
+                    padding: 0 25px;
                     cursor: pointer;
                 }
             }
@@ -127,6 +127,10 @@ background: #004951;
             position: absolute;
             display: flex;
             top: 0;
+            right: -35px;
+            @media (min-width: 1200px){
+                right: -60px;
+            }
             a {
                 color: #9fc0c4;
                 text-decoration: none;
@@ -134,7 +138,7 @@ background: #004951;
                 font-size: 14px;
                 text-transform: uppercase;
                 position: relative;
-                padding: 0 17px;
+                padding: 0 5px;
                 cursor: pointer;
             }
             span {
@@ -143,11 +147,11 @@ background: #004951;
         }
     }
     .main-nav.nav-left {
-        text-align: left;
+        text-align: right;
         position: relative;
     }
     nav.main-nav.nav-right {
-        text-align: right;
+        text-align: left;
         position: relative;
     }
     .main-nav-center {
@@ -167,12 +171,13 @@ background: #004951;
             left: 0;
         }
         .wrapper-logo {
-            transform: translate(-50%, -10%);
+            transform: translate(-50%, -25%);
             position: absolute;
             top: 50%;
             left: 50%;
             z-index: 9999;
             width: 80%;
+            text-align: center;
             a {
                 display: block;
                 img {
@@ -225,7 +230,7 @@ position: relative;
             margin-top: 30px;
             display: inline-block;
             p {
-                text-align: left;
+                text-align: justify;
                 font-size: 16px;
                 color: #595959;
                 font-weight: 400;
@@ -327,6 +332,7 @@ position: relative;
                 }
                 span {
                     font-size: 16px;
+                    text-align: justify;
                     @media (max-width: 480px) {
                         font-size: 14px;
                     }
@@ -439,6 +445,9 @@ background-size: cover;
         .date {
             color: #9fc0c4;
             font-weight: bold;
+            @media (min-width: 991px) {
+                font-size: 15px;
+            }
         }
     }
     .status {
@@ -558,16 +567,23 @@ background-size: cover;
         span {
             color: #fff;
             transition: all 0.5s ease-in-out;
-            min-width: 100%;
+            width: 100%;
             text-align: center;
             position: absolute;
             bottom: 0;
             left: 0;
             white-space: nowrap;
             padding: 10px 20px;
-            background: #8989899e;
-            background: #8989899e;
+            background: #004a51b5;
             text-transform: uppercase;
+            font-weight: bold;
+            @media (min-width: 992px) {
+                white-space: normal;
+                padding: 10px 35px;
+                background: #004a51b5;
+                text-transform: uppercase;
+                min-height: 58px;
+            }
         }
         img {
             width: 100%;
@@ -775,9 +791,8 @@ background: #f9fff7;
         .htp-tablink-inv {
             background-color: unset;
             border: 0 !important;
-            //margin-left: 40px;
-            //margin-right: 40px;
             flex: 1;
+            overflow: hidden;
             .icon-iven {
                 display: block;
                 img {
@@ -854,6 +869,7 @@ background: #f9fff7;
         line-height: 25px;
         padding: 0 20px;
         margin: 25px 0;
+        text-align: justify;
     }
 }
 }
@@ -931,7 +947,7 @@ background: #f9f9f9;
     }
     .d-flex-logo {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-around;
         .item-logo {
             flex: 1;
@@ -942,14 +958,14 @@ background: #f9f9f9;
                 display: block;
                 text-align: center;
                 img {
-                    max-height: 120px;
+                    max-height: 160px;
                 }
             }
         }
     }
     .pnewle-form {
-        padding: 15px;
-        background: #e8f7fa;
+        padding: 20px 60px;
+        background: #edf3ed;
         border-radius: 10px;
         overflow: hidden;
         h3 {
@@ -1289,6 +1305,9 @@ background: #f9f9f9;
                 padding-left: 0;
             }
             li {
+                @media (min-width: 991px) {
+                    font-size: 15px;
+                }
                 font-size: 13px;
             }
         }
@@ -1326,17 +1345,20 @@ background: #f9f9f9;
 }
 @media (max-width: 600px) {
     .hompage-banner-secc .wrapper-banner_content .item-banner-content {
-        top: 29%;
+        top: 14%;
         width: 80%;
         .banner_title h4 {
             font-size: 17px;
             margin-bottom: 0;
         }
+        > a img {
+            max-width: 320px;
+        }
 
         .banner_subtitle {
-            margin-top: 20px;
+            margin-top: 5px;
                 p {
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }
@@ -1432,3 +1454,47 @@ background: #f9f9f9;
     transition: all 500ms linear;
     background:#004a51;
 }
+.main-header.affix-mobile {
+    .wrapper-logo a img {
+        max-height: 70px !important;
+    }
+    .header-navbar-menu .main-nav-center::before {
+        top: -5px !important;;
+    }
+}
+.addThis_listing .addThis_item .addThis_item--icon svg path {
+    fill: #d0b06a;
+}
+@media (max-width: 600px) {
+    .hompage-banner-main .title-banner-main {
+        top: 19% !important;;
+        left: 40% !important;;
+        transform: translate(-20%, -50%) !important;
+    }
+    .htp-tablinks-el .htp-tablink {
+        min-width: 126px;
+    }
+    .section-investment .htp-tabcontents-investment {
+        margin-top: 10px;
+    }
+    .slider-tabcontent {
+        margin: 10px 0 0;
+    }
+    .section-plane .grid_sth__content .place-title h4, .section-investment .wrapper-investment .homepage-banner-investment h4, .section-news .wrapper-news .new--head h4 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 425px) {
+    .section-investment .investment-table .title-iven {
+        font-size: 8px !important;
+    }
+}
+#footer .d-flex-logo .item-logo span {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+

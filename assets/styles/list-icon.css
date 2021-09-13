@@ -55,9 +55,24 @@
     background: #fff;
     display: block;
     text-align: center;
-    color: #b59347;
+    color: #d0b06a;
     font-size: 20px;
     cursor: pointer;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 10%);
     z-index: 99;
+}
+@media (max-width: 600px) {
+    .addThis_listing .addThis_item .addThis_item--icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .back-to-top a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .back-to-top {
+        bottom: 88px;
+    }
 }

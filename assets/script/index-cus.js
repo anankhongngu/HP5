@@ -47,7 +47,7 @@ $(function(){
         }],
         introduce: [{
             img: './assets/images/title-news/title-1-vi.png',
-            desc: 'Green Star Sky Garden không đơn thuần của một căn hộ để ở, đây được xem như tuyệt tác độc bản là nơi khởi nguồn đặc quyền về một cuộc sống: Thanh lọc cơ thể - Bảo vệ sức khoẻ - Khơi nguồn năng lượng thể chất lẫn tinh thần'
+            desc: 'The Peak Garden không đơn thuần của một căn hộ để ở, đây được xem như tuyệt tác độc bản là nơi khởi nguồn đặc quyền về một cuộc sống: Thanh lọc cơ thể - Bảo vệ sức khoẻ - Khơi nguồn năng lượng thể chất lẫn tinh thần'
         }],
         ecological: [{
             titleimg: './assets/images/banner/titi-sinhthai.png'
@@ -55,7 +55,7 @@ $(function(){
         ecologicalcontent: [{
             image: './assets/images/banner/group1.jpg',
             link:'/',
-            title: 'Cư dân dự án được thoả sức hoà mình trong hệ thống mảng xanh nội khu theo phương đứng đẳng cấp, giúp điều hoà nhiệt độ toàn khu với Công viên Luna park hơn 6.000m2, hồ thiên đường lãng mạn hơn 3.000m2 và hệ thống vườn treo thác nước len lõi trong mỗi toà nhà.',
+            title: 'Bên trong từng căn hộ chăm sóc sức khoẻ Wellness Apartment tại dự án được trang bị hệ thống máy lọc không khí, đèn sưởi hồng ngoại, sơn kháng khuẩn,…giúp thanh lọc và bảo vệ hoàn hảo sức khoẻ gia chủ.',
             number: './assets/images/banner/1.png'
         },{
             image: './assets/images/banner/group2.jpg',
@@ -246,7 +246,7 @@ $(function(){
             const htmlstcontent = this.ecologicalcontent.map(stct => {
                 return `<div class="item_content col-xs-100">
                             <div class="item_content--banner">
-                                <a href="${stct.link}">
+                                <a>
                                     <img class="lazyload" width="488" height="255" data-src="${stct.image}" alt="banner">
                                 </a>
                             </div>
@@ -283,13 +283,7 @@ $(function(){
                         </div>
                         <div class="col-md-8 col-sm-12 col-xs-12">
                             <div class="wrapper-map">
-                                <img class="lazyload" width="827" height="590" data-src="${location.map}" alt="map">
-                                <div class="dot-ani">
-                                    <div class="suntory-alo-ph-circle"></div>
-                                    <div class="suntory-alo-ph-circle-fill"></div>
-                                    <div class="suntory-alo-ph-img-circle hide"></div>
-
-                                </div>
+                                <img class="lazyload" width="827" height="590" data-src="${location.map}" alt="map">                                
                             </div>
                         </div>`
             })
@@ -361,8 +355,8 @@ $(function(){
             const htmltienich = this.tienich.map(item => {
                 return `<div class="card">
                             <div>
-                                <a href="#" class="sliderLink">
-                                    <img class="lazyload" height="600" data-src="${item.image}">
+                                <a class="sliderLink">
+                                    <img src="${item.image}">
                                     <span>${item.title}</span>
                                 </a>
                             </div>
@@ -573,7 +567,7 @@ $(function(){
             menu: 'Apartment',
             link: '#block-video'
         },{
-            menu: 'Investment Opportunities',
+            menu: 'Investment',
             link: '#block-investment'
         },{
             menu: 'News',
@@ -749,7 +743,7 @@ $(function(){
             link: '#block-video'
         }
         ,{
-            title: 'Investment Opportunities',
+            title: 'Investment',
             link: '#block-investment'
         }
         ,{
@@ -786,7 +780,7 @@ $(function(){
             const htmlstcontent = this.ecologicalcontent.map(stct => {
                 return `<div class="item_content col-xs-100">
                             <div class="item_content--banner">
-                                <a href="${stct.link}">
+                                <a>
                                     <img class="lazyload" width="488" height="255" data-src="${stct.image}" alt="banner">
                                 </a>
                             </div>
@@ -822,13 +816,7 @@ $(function(){
                         </div>
                         <div class="col-md-8 col-sm-12 col-xs-12">
                             <div class="wrapper-map">
-                                <img class="lazyload" width="827" height="590" data-src="${location.map}" alt="map">
-                                <div class="dot-ani">
-                                    <div class="suntory-alo-ph-circle"></div>
-                                    <div class="suntory-alo-ph-circle-fill"></div>
-                                    <div class="suntory-alo-ph-img-circle hide"></div>
-
-                                </div>
+                                <img class="lazyload" width="827" height="590" data-src="${location.map}" alt="map">                            
                             </div>
                         </div>`
             })
@@ -902,8 +890,8 @@ $(function(){
             const htmltienich = this.tienich.map(item => {
                 return `<div class="card">
                             <div>
-                                <a href="#" class="sliderLink">
-                                    <img class="lazyload" height="600" data-src="${item.image}">
+                                <a class="sliderLink">
+                                    <img src="${item.image}">
                                     <span>${item.title}</span>
                                 </a>
                             </div>

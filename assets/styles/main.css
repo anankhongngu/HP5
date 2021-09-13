@@ -106,7 +106,7 @@ img {
   font-size: 14px;
   text-transform: uppercase;
   position: relative;
-  padding: 0 10px;
+  padding: 0 25px;
   cursor: pointer;
 }
 .mainheader-height .header-navbar-menu .item-link-lang {
@@ -117,6 +117,12 @@ img {
   position: absolute;
   display: flex;
   top: 0;
+  right: -35px;
+}
+@media (min-width: 1200px) {
+  .mainheader-height .header-navbar-menu .item-link-lang div {
+    right: -60px;
+  }
 }
 .mainheader-height .header-navbar-menu .item-link-lang div a {
   color: #9fc0c4;
@@ -125,18 +131,18 @@ img {
   font-size: 14px;
   text-transform: uppercase;
   position: relative;
-  padding: 0 17px;
+  padding: 0 5px;
   cursor: pointer;
 }
 .mainheader-height .header-navbar-menu .item-link-lang div span {
   color: #9fc0c4;
 }
 .mainheader-height .header-navbar-menu .main-nav.nav-left {
-  text-align: left;
+  text-align: right;
   position: relative;
 }
 .mainheader-height .header-navbar-menu nav.main-nav.nav-right {
-  text-align: right;
+  text-align: left;
   position: relative;
 }
 .mainheader-height .header-navbar-menu .main-nav-center {
@@ -156,12 +162,13 @@ img {
   left: 0;
 }
 .mainheader-height .header-navbar-menu .main-nav-center .wrapper-logo {
-  transform: translate(-50%, -10%);
+  transform: translate(-50%, -25%);
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 9999;
   width: 80%;
+  text-align: center;
 }
 .mainheader-height .header-navbar-menu .main-nav-center .wrapper-logo a {
   display: block;
@@ -209,7 +216,7 @@ img {
   display: inline-block;
 }
 .hompage-banner-secc .wrapper-banner_content .item-banner-content .banner_subtitle p {
-  text-align: left;
+  text-align: justify;
   font-size: 16px;
   color: #595959;
   font-weight: 400;
@@ -320,6 +327,7 @@ img {
 }
 .section-ecological .grid_sth__content .sth_item-content .item_content .item_content--text span {
   font-size: 16px;
+  text-align: justify;
 }
 @media (max-width: 480px) {
   .section-ecological .grid_sth__content .sth_item-content .item_content .item_content--text span {
@@ -431,6 +439,11 @@ img {
 .wrapper-block_timelime .timestamp .date {
   color: #9fc0c4;
   font-weight: bold;
+}
+@media (min-width: 991px) {
+  .wrapper-block_timelime .timestamp .date {
+    font-size: 15px;
+  }
 }
 .wrapper-block_timelime .status {
   padding: 0px 40px;
@@ -546,16 +559,25 @@ img {
 .section-utili #slider-slick-home .owl-stage .card span {
   color: #fff;
   transition: all 0.5s ease-in-out;
-  min-width: 100%;
+  width: 100%;
   text-align: center;
   position: absolute;
   bottom: 0;
   left: 0;
   white-space: nowrap;
   padding: 10px 20px;
-  background: #8989899e;
-  background: #8989899e;
+  background: #004a51b5;
   text-transform: uppercase;
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .section-utili #slider-slick-home .owl-stage .card span {
+    white-space: normal;
+    padding: 10px 35px;
+    background: #004a51b5;
+    text-transform: uppercase;
+    min-height: 58px;
+  }
 }
 .section-utili #slider-slick-home .owl-stage .card img {
   width: 100%;
@@ -763,6 +785,7 @@ img {
   background-color: unset;
   border: 0 !important;
   flex: 1;
+  overflow: hidden;
 }
 .section-investment .investment-table .htp-tablinks-investment .htp-tablink-inv .icon-iven {
   display: block;
@@ -830,6 +853,7 @@ img {
   line-height: 25px;
   padding: 0 20px;
   margin: 25px 0;
+  text-align: justify;
 }
 
 .slider-tabcontent {
@@ -901,7 +925,7 @@ img {
 }
 #footer .d-flex-logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-around;
 }
 #footer .d-flex-logo .item-logo {
@@ -917,11 +941,11 @@ img {
   text-align: center;
 }
 #footer .d-flex-logo .item-logo a img {
-  max-height: 120px;
+  max-height: 160px;
 }
 #footer .pnewle-form {
-  padding: 15px;
-  background: #e8f7fa;
+  padding: 20px 60px;
+  background: #edf3ed;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1259,6 +1283,11 @@ img {
 .swiper-slide-timeline .status ul li {
   font-size: 13px;
 }
+@media (min-width: 991px) {
+  .swiper-slide-timeline .status ul li {
+    font-size: 15px;
+  }
+}
 
 @media (min-width: 1024px) {
   .main-nav.nav-left {
@@ -1289,18 +1318,21 @@ img {
 }
 @media (max-width: 600px) {
   .hompage-banner-secc .wrapper-banner_content .item-banner-content {
-    top: 29%;
+    top: 14%;
     width: 80%;
   }
   .hompage-banner-secc .wrapper-banner_content .item-banner-content .banner_title h4 {
     font-size: 17px;
     margin-bottom: 0;
   }
+  .hompage-banner-secc .wrapper-banner_content .item-banner-content > a img {
+    max-width: 320px;
+  }
   .hompage-banner-secc .wrapper-banner_content .item-banner-content .banner_subtitle {
-    margin-top: 20px;
+    margin-top: 5px;
   }
   .hompage-banner-secc .wrapper-banner_content .item-banner-content .banner_subtitle p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .section-investment .investment-table {
@@ -1391,4 +1423,50 @@ img {
   animation: fadeInDown 500ms ease-in-out;
   transition: all 500ms linear;
   background: #004a51;
+}
+
+.main-header.affix-mobile .wrapper-logo a img {
+  max-height: 70px !important;
+}
+.main-header.affix-mobile .header-navbar-menu .main-nav-center::before {
+  top: -5px !important;
+}
+
+.addThis_listing .addThis_item .addThis_item--icon svg path {
+  fill: #d0b06a;
+}
+
+@media (max-width: 600px) {
+  .hompage-banner-main .title-banner-main {
+    top: 19% !important;
+    left: 40% !important;
+    transform: translate(-20%, -50%) !important;
+  }
+
+  .htp-tablinks-el .htp-tablink {
+    min-width: 126px;
+  }
+
+  .section-investment .htp-tabcontents-investment {
+    margin-top: 10px;
+  }
+
+  .slider-tabcontent {
+    margin: 10px 0 0;
+  }
+
+  .section-plane .grid_sth__content .place-title h4, .section-investment .wrapper-investment .homepage-banner-investment h4, .section-news .wrapper-news .new--head h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 425px) {
+  .section-investment .investment-table .title-iven {
+    font-size: 8px !important;
+  }
+}
+#footer .d-flex-logo .item-logo span {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
