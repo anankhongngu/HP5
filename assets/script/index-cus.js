@@ -180,6 +180,7 @@ $(function(){
             content: 'Thông tin, hình ảnh các tiện ích trong website này chỉ mang tính chất tương đối và có thể được điều chỉnh theo quyết định của Chủ đầu tư tại từng thời điểm đảm bảo phù hợp quy hoạch và thực tế thi công của Dự án. Các thông tin, cam kết chính thức sẽ được quy định cụ thể tại Hợp đồng mua bán. Việc quản lý, vận hành và kinh doanh dự án sẽ theo quy định của Ban Quản Lý',
         }],
         form: [{
+            titlelogo:'ĐẦU TƯ & PHÁT TRIỂN BỞI',
             title: 'ĐĂNG KÝ NHẬN THÔNG TIN DỰ ÁN',
             name: 'Họ tên:',
             email: 'Email',
@@ -506,7 +507,11 @@ $(function(){
                         <img class="lazyload" width="630" height="100" data-src="${item.img}" alt="banner">
                     </a>`;
             });
-
+            // title logo
+            const htmltitlelogoabc = this.form.map(item => {
+                return `<span class="abc">${item.titlelogo}</span>
+                <img width="153" height="120" src="./assets/images/footer/logo-hp.png" alt="logo footer">`;
+            });
             //render
             $('.item-banner-content').html(htmlintro.join(''));
             $('.sth_title').html(htmlsttt.join(''));
@@ -539,6 +544,7 @@ $(function(){
             $('.brand-title').html(htmltitlepart.join(''));
             $('.nav-mobile-menu #menu-main-menu').html(htmlmenumobile.join(''));
             $('.title-banner-main').html(htmltitlemain.join(''));
+            $('.item-logo a.logo-2').html(htmltitlelogoabc.join(''));
         
         },
         start: function() {
@@ -714,6 +720,7 @@ $(function(){
             content: "Information and images of utilities in this website are photographic images and can be adjusted at the discretion of the Investor at a specific time to ensure compliance with the project's planning and actual construction. The official information and commitments will be specified in the Sales Contract. The management, operation, and business of the project will follow the regulations of the Project Management Board"
         }],
         form: [{
+            titlelogo:'INVESTMENT & DEVELOPMENT BY',
             title: 'GET PROJECT INFORMATION HERE',
             name: 'Name:',
             email: 'Email',
@@ -1041,6 +1048,11 @@ $(function(){
                         <img class="lazyload" width="630" height="100" data-src="${item.img}" alt="banner">
                     </a>`;
             });
+            // title logo
+            const htmltitlelogoabc = this.form.map(item => {
+                return `<span class="abc">${item.titlelogo}</span>
+                <img width="153" height="120" src="./assets/images/footer/logo-hp.png" alt="logo footer">`;
+            });
 
             $('.item-banner-content').html(htmlintro.join(''));
             $('.sth_title').html(htmlsttt.join(''));
@@ -1073,7 +1085,7 @@ $(function(){
             $('.brand-title').html(htmltitlepart.join(''));
             $('.nav-mobile-menu #menu-main-menu').html(htmlmenumobile.join(''));
             $('.title-banner-main').html(htmltitlemain.join(''));
-        
+            $('.item-logo a.logo-2').html(htmltitlelogoabc.join(''));
 
         },
         start: function() {
@@ -1081,7 +1093,7 @@ $(function(){
             this.renderMenuRightEn();
             this.renderAllEn();
         }
-    }
+    }   
 
     if(localStorage.getItem('template') == 'vi'){
         app.start();
